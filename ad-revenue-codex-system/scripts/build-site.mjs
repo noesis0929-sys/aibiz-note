@@ -238,6 +238,12 @@ function renderArticle(site, article, related) {
   });
 }
 
+function getRelatedArticles(articles, article) {
+  const sameCategory = articles.filter((item) => item.slug !== article.slug && item.category === article.category);
+  const otherArticles = articles.filter((item) => item.slug !== article.slug && item.category !== article.category);
+  return [...sameCategory, ...otherArticles].slice(0, 3);
+}
+
 function renderAbout(site) {
   return shell({
     site,
@@ -252,6 +258,11 @@ function renderAbout(site) {
           <div><dt>運営者</dt><dd>${escapeHtml(site.ownerName)}</dd></div>
           <div><dt>連絡先</dt><dd>${escapeHtml(site.contactEmail)}</dd></div>
         </dl>
+        <h2>編集方針</h2>
+        <p>当サイトでは、AI活用やWeb集客を「明日から試せる実務」に落とし込むことを重視しています。記事では、一般論だけでなく、作業手順、確認ポイント、失敗しやすい点、改善の順番をできるだけ具体的に整理します。</p>
+        <p>内容は公開後も見直し、Search Consoleや実務上の変化に合わせて更新します。古くなりやすいツール名、広告サービス、各種仕様については、必要に応じて公式情報を確認したうえで判断してください。</p>
+        <h2>広告と収益化について</h2>
+        <p>当サイトでは、Google AdSenseなどの広告配信サービスや、将来的に関連サービスの紹介リンクを利用する場合があります。広告や紹介を行う場合でも、読者の判断を妨げないよう、本文の読みやすさと情報の透明性を優先します。</p>
         <p>掲載内容は正確性に配慮して作成しますが、個別の成果や収益を保証するものではありません。実施前には各サービスの公式情報も確認してください。</p>
       </section>
     </main>`
@@ -269,6 +280,10 @@ function renderContact(site) {
         <h1>お問い合わせ</h1>
         <p>記事内容、広告掲載、業務相談に関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
         <p><strong>${escapeHtml(site.contactEmail)}</strong></p>
+        <h2>相談できる内容</h2>
+        <p>AI活用の始め方、Web集客記事の作成、LP改善、Googleビジネスプロフィールの整備、業務自動化の小さな設計などについて相談できます。まだ内容が固まっていない段階でも、現状と困っていることを簡単に送ってください。</p>
+        <h2>お問い合わせ時に書いてほしいこと</h2>
+        <p>返信をスムーズにするため、事業内容、現在の課題、希望する改善内容、参考ページがあれば一緒に記載してください。広告掲載やPR相談の場合は、掲載したい内容と対象ページもお知らせください。</p>
       </section>
     </main>`
   });
@@ -287,6 +302,9 @@ function renderPrivacy(site) {
         <h2>広告配信について</h2>
         <p>当サイトでは、第三者配信の広告サービスを利用する場合があります。広告配信事業者は、利用者の興味に応じた広告を表示するためCookie等を使用することがあります。</p>
         <p>Googleを含む第三者配信事業者がCookieを使用して、利用者が当サイトや他のサイトに過去にアクセスした際の情報に基づいて広告を配信する場合があります。</p>
+        <p>Googleによる広告で使用されるCookieや、パーソナライズ広告の管理については、Googleの広告設定ページなどから確認できます。</p>
+        <h2>広告・PR表記について</h2>
+        <p>当サイトでは、記事内容に関連する広告、PR、紹介リンクを掲載する場合があります。紹介によって収益が発生する場合でも、掲載内容の判断は読者にとって有用かどうかを基準に行います。</p>
         <h2>アクセス解析について</h2>
         <p>当サイトでは、サイト改善のためアクセス解析ツールを利用する場合があります。収集される情報は個人を直接特定するものではありません。</p>
         <h2>免責事項</h2>
@@ -338,6 +356,6 @@ await writeFile(path.join(publicDir, "sitemap.xml"), renderSitemap(siteUrl, data
 await writeFile(path.join(publicDir, "ads.txt"), renderAdsTxt(data.site), "utf8");
 
 for (const article of data.articles) {
-  const related = data.articles.filter((item) => item.slug !== article.slug).slice(0, 3);
+  const related = getRelatedArticles(data.articles, article);
   await writeFile(path.join(postsDir, `${article.slug}.html`), renderArticle(data.site, article, related), "utf8");
 }
