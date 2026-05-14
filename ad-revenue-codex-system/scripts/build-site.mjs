@@ -171,10 +171,6 @@ function renderHome(data) {
         <div class="article-grid featured-grid">
           ${latest}
         </div>
-        <div class="update-note" aria-label="更新確認">
-          <strong>Publish test 2026.05.13</strong>
-          <span>GitHub連携による自動公開の確認中です。</span>
-        </div>
       </section>
 
       <section class="section">
