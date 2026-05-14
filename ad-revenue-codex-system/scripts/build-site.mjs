@@ -20,6 +20,38 @@ function normalizeSiteUrl(siteUrl) {
   return String(siteUrl || "https://example.com").replace(/\/+$/, "");
 }
 
+function formatDate(value) {
+  if (!value) return "";
+  return new Intl.DateTimeFormat("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(new Date(value));
+}
+
+function articleJsonLd(site, article) {
+  const siteUrl = normalizeSiteUrl(site.siteUrl);
+  const payload = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.publishedAt,
+    dateModified: article.updatedAt || article.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: site.ownerName || site.name
+    },
+    publisher: {
+      "@type": "Organization",
+      name: site.name
+    },
+    mainEntityOfPage: `${siteUrl}/posts/${article.slug}.html`
+  };
+
+  return `<script type="application/ld+json">${JSON.stringify(payload).replaceAll("</", "<\\/")}</script>`;
+}
+
 function adsenseHead(site) {
   if (!site.googleAdsenseClient) return "";
   return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${escapeHtml(site.googleAdsenseClient)}" crossorigin="anonymous"></script>`;
@@ -54,7 +86,7 @@ function header(site, depth = ".") {
   </header>`;
 }
 
-function shell({ site, title, description, body, depth = "." }) {
+function shell({ site, title, description, body, depth = ".", structuredData = "" }) {
   return `<!doctype html>
 <html lang="ja">
   <head>
@@ -63,6 +95,7 @@ function shell({ site, title, description, body, depth = "." }) {
     <meta name="description" content="${escapeHtml(description)}">
     <title>${escapeHtml(title)} | ${escapeHtml(site.name)}</title>
     ${adsenseHead(site)}
+    ${structuredData}
     <link rel="stylesheet" href="${depth}/style.css">
   </head>
   <body>
@@ -73,10 +106,12 @@ function shell({ site, title, description, body, depth = "." }) {
 }
 
 function articleCard(article) {
+  const updatedDate = formatDate(article.updatedAt || article.publishedAt);
   return `<article class="article-card">
     <div class="article-meta">
       <span>${escapeHtml(article.category)}</span>
       <span>${article.readingMinutes}分で読める</span>
+      <span>更新 ${escapeHtml(updatedDate)}</span>
     </div>
     <h3><a href="./posts/${escapeHtml(article.slug)}.html">${escapeHtml(article.title)}</a></h3>
     <p>${escapeHtml(article.description)}</p>
@@ -175,12 +210,15 @@ function renderArticle(site, article, related) {
   </section>`).join("");
 
   const relatedCards = related.map((item) => `<li><a href="./${escapeHtml(item.slug)}.html">${escapeHtml(item.title)}</a></li>`).join("");
+  const publishedDate = formatDate(article.publishedAt);
+  const updatedDate = formatDate(article.updatedAt || article.publishedAt);
 
   return shell({
     site,
     title: article.title,
     description: article.description,
     depth: "..",
+    structuredData: articleJsonLd(site, article),
     body: `<main class="article-page">
       <article class="post">
         <div class="article-meta">
@@ -188,6 +226,10 @@ function renderArticle(site, article, related) {
           <span>${article.readingMinutes}分で読める</span>
         </div>
         <h1>${escapeHtml(article.title)}</h1>
+        <dl class="post-dates" aria-label="記事の日付">
+          <div><dt>投稿日</dt><dd><time datetime="${escapeHtml(article.publishedAt || "")}">${escapeHtml(publishedDate)}</time></dd></div>
+          <div><dt>更新日</dt><dd><time datetime="${escapeHtml(article.updatedAt || article.publishedAt || "")}">${escapeHtml(updatedDate)}</time></dd></div>
+        </dl>
         <p class="post-lead">${escapeHtml(article.description)}</p>
         ${adSlot("記事上部", site)}
         ${sections}

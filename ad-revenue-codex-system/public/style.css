@@ -386,6 +386,29 @@ code {
   letter-spacing: 0;
 }
 
+.post-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin: 0 0 24px;
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.post-dates div {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.post-dates dt {
+  font-weight: 800;
+}
+
+.post-dates dd {
+  margin: 0;
+}
+
 .post-lead {
   margin: 0 0 34px;
   color: var(--sub);
