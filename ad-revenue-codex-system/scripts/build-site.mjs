@@ -208,6 +208,10 @@ function renderArticle(site, article, related) {
   const relatedCards = related.map((item) => `<li><a href="./${escapeHtml(item.slug)}.html">${escapeHtml(item.title)}</a></li>`).join("");
   const publishedDate = formatDate(article.publishedAt);
   const updatedDate = formatDate(article.updatedAt || article.publishedAt);
+  const articleFigure = article.image ? `<figure class="post-figure">
+    <img src="../${escapeHtml(article.image.src)}" alt="${escapeHtml(article.image.alt || article.title)}" loading="lazy">
+    ${article.image.caption ? `<figcaption>${escapeHtml(article.image.caption)}</figcaption>` : ""}
+  </figure>` : "";
 
   return shell({
     site,
@@ -227,6 +231,7 @@ function renderArticle(site, article, related) {
           <div><dt>更新日</dt><dd><time datetime="${escapeHtml(article.updatedAt || article.publishedAt || "")}">${escapeHtml(updatedDate)}</time></dd></div>
         </dl>
         <p class="post-lead">${escapeHtml(article.description)}</p>
+        ${articleFigure}
         ${adSlot("記事上部", site)}
         ${sections}
         <section class="post-related">

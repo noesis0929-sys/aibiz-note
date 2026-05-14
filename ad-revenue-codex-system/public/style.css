@@ -415,6 +415,27 @@ code {
   font-size: 18px;
 }
 
+.post-figure {
+  margin: 0 0 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f8faf8;
+}
+
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.post-figure figcaption {
+  border-top: 1px solid var(--line);
+  padding: 12px 16px;
+  color: var(--sub);
+  font-size: 13px;
+}
+
 .post section {
   margin-top: 42px;
 }
