@@ -62,14 +62,10 @@ function adSlot(label, site) {
     return "";
   }
 
-  return `<aside class="ad-slot" aria-label="広告枠">
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="${escapeHtml(site.googleAdsenseClient)}"
-      data-ad-slot="0000000000"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  return `<aside class="ad-slot placeholder" aria-label="${escapeHtml(label)}">
+    <span>広告掲載予定</span>
+    <strong>AI Biz Note</strong>
+    <small>審査完了後、読書体験を妨げない位置に広告を配置します。</small>
   </aside>`;
 }
 
@@ -80,6 +76,7 @@ function header(site, depth = ".") {
       <a href="${depth}/#articles">記事</a>
       <a href="${depth}/#categories">カテゴリ</a>
       <a href="${depth}/about.html">運営者情報</a>
+      <a href="${depth}/consultation.html">相談メニュー</a>
       <a href="${depth}/privacy-policy.html">ポリシー</a>
       <a href="${depth}/contact.html">お問い合わせ</a>
     </nav>
@@ -183,6 +180,15 @@ function renderHome(data) {
           <h2>扱うテーマ</h2>
         </div>
         <div class="watch-list">${categoryList}</div>
+      </section>
+
+      <section class="section consultation-band">
+        <div class="section-heading">
+          <p class="eyebrow">Consultation</p>
+          <h2>小さな改善を、相談できる形にする</h2>
+          <p class="lead">AI活用、記事制作、LP改善、問い合わせ導線の整理など、記事を読んだ後に実行へ移しやすい相談メニューを用意しています。</p>
+        </div>
+        <a class="button dark" href="./consultation.html">相談メニューを見る</a>
       </section>
 
       <section id="articles" class="section articles">
@@ -294,6 +300,39 @@ function renderContact(site) {
   });
 }
 
+function renderConsultation(site) {
+  return shell({
+    site,
+    title: "相談メニュー",
+    description: "AI活用、Web集客、LP改善、記事制作の小さな相談メニューです。",
+    body: `<main class="plain-page">
+      <section class="section doc">
+        <p class="eyebrow">Consultation</p>
+        <h1>相談メニュー</h1>
+        <p>AI Biz Noteでは、小さな事業者や個人事業主向けに、Web集客とAI活用を実務へ落とし込む相談を受け付けています。大きな制作案件の前に、今あるページ、記事、問い合わせ導線をどう直すかを一緒に整理するためのメニューです。</p>
+        <div class="service-list">
+          <section>
+            <h2>AI活用の始め方相談</h2>
+            <p>問い合わせ返信、議事録、記事構成、SNS投稿、社内メモ整理など、今の仕事でAIに任せやすい作業を洗い出します。使うツールよりも、依頼文、確認ルール、保存するテンプレートを先に整えます。</p>
+          </section>
+          <section>
+            <h2>記事テーマと構成の相談</h2>
+            <p>検索から読まれる記事を増やすため、読者の悩み、検索意図、内部リンク、収益導線を整理します。記事数を増やすだけでなく、相談や問い合わせにつながるテーマを優先します。</p>
+          </section>
+          <section>
+            <h2>LP・サービスページ改善相談</h2>
+            <p>ファーストビュー、料金表示、FAQ、実績、問い合わせボタンなどを確認し、訪問者が迷いやすい場所を見つけます。全面リニューアルではなく、今日直せる順番に分けて提案します。</p>
+          </section>
+        </div>
+        <h2>相談前に用意すると進みやすいもの</h2>
+        <p>現在のサイトURL、困っていること、増やしたい問い合わせの種類、参考にしているページ、過去のお客様からよく聞かれる質問があると、具体的な改善案にしやすくなります。</p>
+        <h2>お問い合わせ方法</h2>
+        <p>相談を希望する場合は、${escapeHtml(site.contactEmail)} まで「AI Biz Note相談希望」と書いてご連絡ください。内容が固まっていない段階でも、現状と気になっている点を短く送っていただければ大丈夫です。</p>
+      </section>
+    </main>`
+  });
+}
+
 function renderPrivacy(site) {
   return shell({
     site,
@@ -330,7 +369,7 @@ Sitemap: ${siteUrl}/sitemap.xml
 }
 
 function renderSitemap(siteUrl, articles) {
-  const pages = ["", "/about.html", "/privacy-policy.html", "/contact.html"];
+  const pages = ["", "/about.html", "/consultation.html", "/privacy-policy.html", "/contact.html"];
   const posts = articles.map((article) => `/posts/${article.slug}.html`);
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -354,6 +393,7 @@ await mkdir(publicDir, { recursive: true });
 await mkdir(postsDir, { recursive: true });
 await writeFile(path.join(publicDir, "index.html"), renderHome(data), "utf8");
 await writeFile(path.join(publicDir, "about.html"), renderAbout(data.site), "utf8");
+await writeFile(path.join(publicDir, "consultation.html"), renderConsultation(data.site), "utf8");
 await writeFile(path.join(publicDir, "contact.html"), renderContact(data.site), "utf8");
 await writeFile(path.join(publicDir, "privacy-policy.html"), renderPrivacy(data.site), "utf8");
 await writeFile(path.join(publicDir, "robots.txt"), renderRobots(siteUrl), "utf8");
