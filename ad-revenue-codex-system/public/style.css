@@ -416,7 +416,8 @@ code {
 }
 
 .post-figure {
-  margin: 0 0 34px;
+  max-width: 680px;
+  margin: 0 auto 34px;
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
@@ -481,5 +482,9 @@ code {
 
   .hero {
     min-height: 560px;
+  }
+
+  .post-figure {
+    max-width: none;
   }
 }
