@@ -142,6 +142,11 @@ code {
   color: #fff;
 }
 
+.button.dark {
+  background: var(--green-dark);
+  color: #fff;
+}
+
 .metrics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -294,6 +299,11 @@ code {
   font-weight: 800;
 }
 
+.consultation-band {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
 .ad-slot {
   display: grid;
   place-items: center;
@@ -363,6 +373,70 @@ code {
 .article-stats dd {
   margin: 2px 0 0;
   font-weight: 800;
+}
+
+.service-list {
+  display: grid;
+  gap: 18px;
+  margin: 28px 0;
+}
+
+.service-list section {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+  background: var(--paper);
+}
+
+.service-list h2 {
+  margin-top: 0;
+}
+
+.consultation-form {
+  display: grid;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.consultation-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.consultation-form textarea {
+  resize: vertical;
+}
+
+.consultation-form input:focus,
+.consultation-form select:focus,
+.consultation-form textarea:focus {
+  outline: 3px solid rgba(23, 107, 77, 0.16);
+  border-color: var(--green);
+}
+
+.consultation-form .button {
+  width: fit-content;
+  border: 0;
+  cursor: pointer;
+}
+
+.hidden-field {
+  position: absolute;
+  left: -9999px;
 }
 
 .article-page {

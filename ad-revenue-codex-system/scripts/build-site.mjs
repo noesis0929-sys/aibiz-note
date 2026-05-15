@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260516-image-fix";
+const assetVersion = "20260516-consultation-form";
 
 function escapeHtml(value) {
   return String(value)
@@ -327,8 +327,80 @@ function renderConsultation(site) {
         </div>
         <h2>相談前に用意すると進みやすいもの</h2>
         <p>現在のサイトURL、困っていること、増やしたい問い合わせの種類、参考にしているページ、過去のお客様からよく聞かれる質問があると、具体的な改善案にしやすくなります。</p>
-        <h2>お問い合わせ方法</h2>
-        <p>相談を希望する場合は、${escapeHtml(site.contactEmail)} まで「AI Biz Note相談希望」と書いてご連絡ください。内容が固まっていない段階でも、現状と気になっている点を短く送っていただければ大丈夫です。</p>
+        <h2>相談フォーム</h2>
+        <p>以下の項目を分かる範囲で送ってください。初回送信時は、送信先メールアドレス側で確認が必要になる場合があります。</p>
+        <form class="consultation-form" action="https://formsubmit.co/${escapeHtml(site.contactEmail)}" method="POST">
+          <input type="hidden" name="_subject" value="AI Biz Note 相談フォーム">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="${normalizeSiteUrl(site.siteUrl)}/thanks.html">
+          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+
+          <label>
+            お名前
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+
+          <label>
+            メールアドレス
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+
+          <label>
+            事業内容
+            <input type="text" name="business_type" placeholder="例: 整体院、美容室、士業、個人事業など" required>
+          </label>
+
+          <label>
+            相談したい内容
+            <select name="consultation_topic" required>
+              <option value="">選択してください</option>
+              <option value="AI活用の始め方">AI活用の始め方</option>
+              <option value="記事テーマと構成">記事テーマと構成</option>
+              <option value="LP・サービスページ改善">LP・サービスページ改善</option>
+              <option value="問い合わせ導線の整理">問い合わせ導線の整理</option>
+              <option value="その他">その他</option>
+            </select>
+          </label>
+
+          <label>
+            現在のサイトURL
+            <input type="url" name="current_url" placeholder="https://example.com">
+          </label>
+
+          <label>
+            困っていること・必要事項
+            <textarea name="message" rows="8" required placeholder="例:
+・今の課題
+・増やしたい問い合わせ
+・見てほしいページ
+・希望する改善内容
+・いつまでに相談したいか"></textarea>
+          </label>
+
+          <label>
+            希望する進め方・予算感
+            <input type="text" name="budget_timing" placeholder="例: まずは相談のみ、今月中に改善したい、など">
+          </label>
+
+          <button class="button dark" type="submit">相談内容を送信する</button>
+        </form>
+      </section>
+    </main>`
+  });
+}
+
+function renderThanks(site) {
+  return shell({
+    site,
+    title: "送信完了",
+    description: `${site.name}の相談フォーム送信完了ページです。`,
+    body: `<main class="plain-page">
+      <section class="section doc">
+        <p class="eyebrow">Thanks</p>
+        <h1>送信ありがとうございました</h1>
+        <p>相談内容を受け付けました。内容を確認したうえで、必要に応じてご連絡します。</p>
+        <p>初回のみ、フォーム送信サービスから確認メールが届く場合があります。その場合はメール内の確認を完了してください。</p>
+        <p><a class="text-link" href="./">トップページへ戻る</a></p>
       </section>
     </main>`
   });
@@ -355,6 +427,7 @@ function renderPrivacy(site) {
         <h2>免責事項</h2>
         <p>当サイトの情報は、可能な限り正確な内容を掲載するよう努めますが、正確性や安全性を保証するものではありません。掲載情報の利用によって生じた損害について、当サイトは責任を負いかねます。</p>
         <h2>お問い合わせ</h2>
+        <p>お問い合わせや相談フォームから送信された内容は、返信および相談内容の確認のために利用します。フォーム送信には外部のフォーム送信サービスを利用する場合があります。</p>
         <p>個人情報の取り扱いに関するお問い合わせは、${escapeHtml(site.contactEmail)} までご連絡ください。</p>
       </section>
     </main>`
@@ -370,7 +443,7 @@ Sitemap: ${siteUrl}/sitemap.xml
 }
 
 function renderSitemap(siteUrl, articles) {
-  const pages = ["", "/about.html", "/consultation.html", "/privacy-policy.html", "/contact.html"];
+  const pages = ["", "/about.html", "/consultation.html", "/thanks.html", "/privacy-policy.html", "/contact.html"];
   const posts = articles.map((article) => `/posts/${article.slug}.html`);
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -395,6 +468,7 @@ await mkdir(postsDir, { recursive: true });
 await writeFile(path.join(publicDir, "index.html"), renderHome(data), "utf8");
 await writeFile(path.join(publicDir, "about.html"), renderAbout(data.site), "utf8");
 await writeFile(path.join(publicDir, "consultation.html"), renderConsultation(data.site), "utf8");
+await writeFile(path.join(publicDir, "thanks.html"), renderThanks(data.site), "utf8");
 await writeFile(path.join(publicDir, "contact.html"), renderContact(data.site), "utf8");
 await writeFile(path.join(publicDir, "privacy-policy.html"), renderPrivacy(data.site), "utf8");
 await writeFile(path.join(publicDir, "robots.txt"), renderRobots(siteUrl), "utf8");

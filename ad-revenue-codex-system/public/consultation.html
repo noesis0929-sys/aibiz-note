@@ -7,7 +7,7 @@
     <title>相談メニュー | AI Biz Note</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2367995267394493" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="./style.css?v=20260516-image-fix">
+    <link rel="stylesheet" href="./style.css?v=20260516-consultation-form">
   </head>
   <body>
     <header class="topbar">
@@ -42,8 +42,63 @@
         </div>
         <h2>相談前に用意すると進みやすいもの</h2>
         <p>現在のサイトURL、困っていること、増やしたい問い合わせの種類、参考にしているページ、過去のお客様からよく聞かれる質問があると、具体的な改善案にしやすくなります。</p>
-        <h2>お問い合わせ方法</h2>
-        <p>相談を希望する場合は、giverslane.yamagata@gmail.com まで「AI Biz Note相談希望」と書いてご連絡ください。内容が固まっていない段階でも、現状と気になっている点を短く送っていただければ大丈夫です。</p>
+        <h2>相談フォーム</h2>
+        <p>以下の項目を分かる範囲で送ってください。初回送信時は、送信先メールアドレス側で確認が必要になる場合があります。</p>
+        <form class="consultation-form" action="https://formsubmit.co/giverslane.yamagata@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="AI Biz Note 相談フォーム">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://aibiz-note.jp/thanks.html">
+          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+
+          <label>
+            お名前
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+
+          <label>
+            メールアドレス
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+
+          <label>
+            事業内容
+            <input type="text" name="business_type" placeholder="例: 整体院、美容室、士業、個人事業など" required>
+          </label>
+
+          <label>
+            相談したい内容
+            <select name="consultation_topic" required>
+              <option value="">選択してください</option>
+              <option value="AI活用の始め方">AI活用の始め方</option>
+              <option value="記事テーマと構成">記事テーマと構成</option>
+              <option value="LP・サービスページ改善">LP・サービスページ改善</option>
+              <option value="問い合わせ導線の整理">問い合わせ導線の整理</option>
+              <option value="その他">その他</option>
+            </select>
+          </label>
+
+          <label>
+            現在のサイトURL
+            <input type="url" name="current_url" placeholder="https://example.com">
+          </label>
+
+          <label>
+            困っていること・必要事項
+            <textarea name="message" rows="8" required placeholder="例:
+・今の課題
+・増やしたい問い合わせ
+・見てほしいページ
+・希望する改善内容
+・いつまでに相談したいか"></textarea>
+          </label>
+
+          <label>
+            希望する進め方・予算感
+            <input type="text" name="budget_timing" placeholder="例: まずは相談のみ、今月中に改善したい、など">
+          </label>
+
+          <button class="button dark" type="submit">相談内容を送信する</button>
+        </form>
       </section>
     </main>
   </body>
