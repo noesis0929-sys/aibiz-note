@@ -6,6 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
+const assetVersion = "20260516-image-fix";
 
 function escapeHtml(value) {
   return String(value)
@@ -93,7 +94,7 @@ function shell({ site, title, description, body, depth = ".", structuredData = "
     <title>${escapeHtml(title)} | ${escapeHtml(site.name)}</title>
     ${adsenseHead(site)}
     ${structuredData}
-    <link rel="stylesheet" href="${depth}/style.css">
+    <link rel="stylesheet" href="${depth}/style.css?v=${assetVersion}">
   </head>
   <body>
     ${header(site, depth)}

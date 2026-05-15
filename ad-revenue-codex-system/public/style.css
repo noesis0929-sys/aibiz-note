@@ -416,7 +416,7 @@ code {
 }
 
 .post-figure {
-  width: min(100%, 640px);
+  width: min(100%, 560px);
   max-width: 100%;
   margin: 0 auto 34px;
   border: 1px solid var(--line);
