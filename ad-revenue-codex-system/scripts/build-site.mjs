@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260516-consultation-form";
+const assetVersion = "20260516-mail-form";
 
 function escapeHtml(value) {
   return String(value)
@@ -328,12 +328,8 @@ function renderConsultation(site) {
         <h2>相談前に用意すると進みやすいもの</h2>
         <p>現在のサイトURL、困っていること、増やしたい問い合わせの種類、参考にしているページ、過去のお客様からよく聞かれる質問があると、具体的な改善案にしやすくなります。</p>
         <h2>相談フォーム</h2>
-        <p>以下の項目を分かる範囲で送ってください。初回送信時は、送信先メールアドレス側で確認が必要になる場合があります。</p>
-        <form class="consultation-form" action="https://formsubmit.co/${escapeHtml(site.contactEmail)}" method="POST">
-          <input type="hidden" name="_subject" value="AI Biz Note 相談フォーム">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="${normalizeSiteUrl(site.siteUrl)}/thanks.html">
-          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+        <p>以下の項目を分かる範囲で入力すると、メールアプリが開きます。内容を確認して送信してください。</p>
+        <form class="consultation-form" action="mailto:${escapeHtml(site.contactEmail)}?subject=AI%20Biz%20Note%20%E7%9B%B8%E8%AB%87%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0" method="POST" enctype="text/plain">
 
           <label>
             お名前
@@ -382,8 +378,9 @@ function renderConsultation(site) {
             <input type="text" name="budget_timing" placeholder="例: まずは相談のみ、今月中に改善したい、など">
           </label>
 
-          <button class="button dark" type="submit">相談内容を送信する</button>
+          <button class="button dark" type="submit">メールアプリで送信する</button>
         </form>
+        <p class="form-note">送信ボタンでメールアプリが開かない場合は、${escapeHtml(site.contactEmail)} 宛に「AI Biz Note相談希望」と書いて送ってください。</p>
       </section>
     </main>`
   });

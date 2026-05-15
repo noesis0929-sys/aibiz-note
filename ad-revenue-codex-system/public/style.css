@@ -434,9 +434,11 @@ code {
   cursor: pointer;
 }
 
-.hidden-field {
-  position: absolute;
-  left: -9999px;
+.form-note {
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #fffaf0;
 }
 
 .article-page {
