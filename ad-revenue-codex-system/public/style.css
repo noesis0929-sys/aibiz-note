@@ -515,6 +515,30 @@ code {
   font-size: 13px;
 }
 
+.share-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 34px;
+}
+
+.share-box span {
+  color: var(--sub);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.share-box a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: #fff;
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .post section {
   margin-top: 42px;
 }

@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260516-positioning";
+const assetVersion = "20260516-social";
 
 function escapeHtml(value) {
   return String(value)
@@ -19,6 +19,12 @@ function escapeHtml(value) {
 
 function normalizeSiteUrl(siteUrl) {
   return String(siteUrl || "https://example.com").replace(/\/+$/, "");
+}
+
+function absoluteUrl(site, pagePath = "") {
+  const siteUrl = normalizeSiteUrl(site.siteUrl);
+  if (!pagePath) return siteUrl;
+  return `${siteUrl}${pagePath.startsWith("/") ? pagePath : `/${pagePath}`}`;
 }
 
 function formatDate(value) {
@@ -84,14 +90,32 @@ function header(site, depth = ".") {
   </header>`;
 }
 
-function shell({ site, title, description, body, depth = ".", structuredData = "" }) {
+function socialMeta({ site, title, description, url, image, type = "website" }) {
+  const shareImage = image || absoluteUrl(site, "/assets/ai-biz-note-org-chart.png");
+  return `<link rel="canonical" href="${escapeHtml(url)}">
+    <meta property="og:type" content="${escapeHtml(type)}">
+    <meta property="og:site_name" content="${escapeHtml(site.name)}">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(description)}">
+    <meta property="og:url" content="${escapeHtml(url)}">
+    <meta property="og:image" content="${escapeHtml(shareImage)}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:image" content="${escapeHtml(shareImage)}">`;
+}
+
+function shell({ site, title, description, body, depth = ".", structuredData = "", url = "", image = "", type = "website" }) {
+  const pageTitle = `${title} | ${site.name}`;
+  const pageUrl = url || absoluteUrl(site, "/");
   return `<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${escapeHtml(description)}">
-    <title>${escapeHtml(title)} | ${escapeHtml(site.name)}</title>
+    <title>${escapeHtml(pageTitle)}</title>
+    ${socialMeta({ site, title: pageTitle, description, url: pageUrl, image, type })}
     ${adsenseHead(site)}
     ${structuredData}
     <link rel="stylesheet" href="${depth}/style.css?v=${assetVersion}">
@@ -127,6 +151,7 @@ function renderHome(data) {
     site,
     title: "AIとWeb集客の実務ノート",
     description: site.tagline,
+    url: absoluteUrl(site, "/"),
     body: `<main>
       <section class="hero">
         <div class="hero-bg" aria-hidden="true"></div>
@@ -215,6 +240,8 @@ function renderArticle(site, article, related) {
   const relatedCards = related.map((item) => `<li><a href="./${escapeHtml(item.slug)}.html">${escapeHtml(item.title)}</a></li>`).join("");
   const publishedDate = formatDate(article.publishedAt);
   const updatedDate = formatDate(article.updatedAt || article.publishedAt);
+  const articleUrl = absoluteUrl(site, `/posts/${article.slug}.html`);
+  const articleImage = article.image ? absoluteUrl(site, `/${article.image.src}`) : "";
   const articleFigure = article.image ? `<figure class="post-figure">
     <img src="../${escapeHtml(article.image.src)}" alt="${escapeHtml(article.image.alt || article.title)}" loading="lazy">
     ${article.image.caption ? `<figcaption>${escapeHtml(article.image.caption)}</figcaption>` : ""}
@@ -225,6 +252,9 @@ function renderArticle(site, article, related) {
     title: article.title,
     description: article.description,
     depth: "..",
+    url: articleUrl,
+    image: articleImage,
+    type: "article",
     structuredData: articleJsonLd(site, article),
     body: `<main class="article-page">
       <article class="post">
@@ -239,6 +269,11 @@ function renderArticle(site, article, related) {
         </dl>
         <p class="post-lead">${escapeHtml(article.description)}</p>
         ${articleFigure}
+        <div class="share-box" aria-label="記事を共有">
+          <span>この記事を共有</span>
+          <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(articleUrl)}" target="_blank" rel="noopener">Xで共有</a>
+          <a href="https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(articleUrl)}" target="_blank" rel="noopener">LINEで共有</a>
+        </div>
         ${adSlot("記事上部", site)}
         ${sections}
         <section class="post-consultation">
