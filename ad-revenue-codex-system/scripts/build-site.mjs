@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260516-mail-form";
+const assetVersion = "20260516-article-cta";
 
 function escapeHtml(value) {
   return String(value)
@@ -241,6 +241,12 @@ function renderArticle(site, article, related) {
         ${articleFigure}
         ${adSlot("記事上部", site)}
         ${sections}
+        <section class="post-consultation">
+          <p class="eyebrow">Next Step</p>
+          <h2>この記事を自分の事業に当てはめたいときは</h2>
+          <p>AI活用、記事構成、LP改善、問い合わせ導線の整理など、状況に合わせて小さく相談できます。現在のサイトURLや困っていることが分かる範囲であれば、相談フォームから送れます。</p>
+          <a class="button dark" href="../consultation.html">相談メニューを見る</a>
+        </section>
         <section class="post-related">
           <h2>あわせて読みたい</h2>
           <ul>${relatedCards}</ul>

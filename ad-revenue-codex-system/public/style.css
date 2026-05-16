@@ -535,6 +535,21 @@ code {
   padding-top: 28px;
 }
 
+.post-consultation {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: #f8faf8;
+}
+
+.post-consultation h2 {
+  margin-top: 0;
+}
+
+.post-consultation .button {
+  margin-top: 18px;
+}
+
 .post-related ul {
   display: grid;
   gap: 10px;
