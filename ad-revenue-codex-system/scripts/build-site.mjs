@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260516-article-cta";
+const assetVersion = "20260516-positioning";
 
 function escapeHtml(value) {
   return String(value)
@@ -136,7 +136,7 @@ function renderHome(data) {
           <p>${escapeHtml(featured.lead)}</p>
           <div class="hero-actions">
             <a class="button primary" href="#articles">記事を読む</a>
-            <a class="button secondary" href="./about.html">このサイトについて</a>
+            <a class="button secondary" href="./consultation.html">相談メニューを見る</a>
           </div>
         </div>
       </section>
@@ -186,8 +186,8 @@ function renderHome(data) {
       <section class="section consultation-band">
         <div class="section-heading">
           <p class="eyebrow">Consultation</p>
-          <h2>小さな改善を、相談できる形にする</h2>
-          <p class="lead">AI活用、記事制作、LP改善、問い合わせ導線の整理など、記事を読んだ後に実行へ移しやすい相談メニューを用意しています。</p>
+          <h2>記事で学んだことを、実装まで進める</h2>
+          <p class="lead">AI活用、Web集客、LP改善、問い合わせ導線の整理など、記事だけでは止まりやすい作業を個別相談で前に進めます。</p>
         </div>
         <a class="button dark" href="./consultation.html">相談メニューを見る</a>
       </section>
@@ -243,7 +243,7 @@ function renderArticle(site, article, related) {
         ${sections}
         <section class="post-consultation">
           <p class="eyebrow">Next Step</p>
-          <h2>この記事を自分の事業に当てはめたいときは</h2>
+          <h2>この記事を実務に落とし込みたいときは</h2>
           <p>AI活用、記事構成、LP改善、問い合わせ導線の整理など、状況に合わせて小さく相談できます。現在のサイトURLや困っていることが分かる範囲であれば、相談フォームから送れます。</p>
           <a class="button dark" href="../consultation.html">相談メニューを見る</a>
         </section>
@@ -271,7 +271,7 @@ function renderAbout(site) {
       <section class="section doc">
         <p class="eyebrow">About</p>
         <h1>運営者情報</h1>
-        <p>${escapeHtml(site.name)}は、小さな事業のWeb集客、LP改善、AI活用を実務目線で整理する情報メディアです。</p>
+        <p>${escapeHtml(site.name)}は、小さな事業のWeb集客、LP改善、AI活用を、記事で学び、相談で実装できる形に整理する実務メディアです。</p>
         <dl class="article-stats">
           <div><dt>運営者</dt><dd>${escapeHtml(site.ownerName)}</dd></div>
           <div><dt>連絡先</dt><dd>${escapeHtml(site.contactEmail)}</dd></div>
@@ -311,19 +311,19 @@ function renderConsultation(site) {
   return shell({
     site,
     title: "相談メニュー",
-    description: "AI活用、Web集客、LP改善、記事制作の小さな相談メニューです。",
+    description: "AI活用、Web集客、LP改善、問い合わせ導線を実装へ進める相談メニューです。",
     body: `<main class="plain-page">
       <section class="section doc">
         <p class="eyebrow">Consultation</p>
-        <h1>相談メニュー</h1>
-        <p>AI Biz Noteでは、小さな事業者や個人事業主向けに、Web集客とAI活用を実務へ落とし込む相談を受け付けています。大きな制作案件の前に、今あるページ、記事、問い合わせ導線をどう直すかを一緒に整理するためのメニューです。</p>
+        <h1>Web集客・AI実装相談</h1>
+        <p>AI Biz Noteでは、小さな事業者や個人事業主向けに、Web集客とAI活用を実務へ落とし込む相談を受け付けています。記事で学んだ内容を、自分のサイト、問い合わせ導線、日々の業務にどう実装するかを一緒に整理します。</p>
         <div class="service-list">
           <section>
-            <h2>AI活用の始め方相談</h2>
+            <h2>AI活用の実装相談</h2>
             <p>問い合わせ返信、議事録、記事構成、SNS投稿、社内メモ整理など、今の仕事でAIに任せやすい作業を洗い出します。使うツールよりも、依頼文、確認ルール、保存するテンプレートを先に整えます。</p>
           </section>
           <section>
-            <h2>記事テーマと構成の相談</h2>
+            <h2>記事テーマと集客導線の相談</h2>
             <p>検索から読まれる記事を増やすため、読者の悩み、検索意図、内部リンク、収益導線を整理します。記事数を増やすだけでなく、相談や問い合わせにつながるテーマを優先します。</p>
           </section>
           <section>
@@ -356,8 +356,8 @@ function renderConsultation(site) {
             相談したい内容
             <select name="consultation_topic" required>
               <option value="">選択してください</option>
-              <option value="AI活用の始め方">AI活用の始め方</option>
-              <option value="記事テーマと構成">記事テーマと構成</option>
+              <option value="AI活用の実装相談">AI活用の実装相談</option>
+              <option value="記事テーマと集客導線">記事テーマと集客導線</option>
               <option value="LP・サービスページ改善">LP・サービスページ改善</option>
               <option value="問い合わせ導線の整理">問い合わせ導線の整理</option>
               <option value="その他">その他</option>

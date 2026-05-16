@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "AI Biz Note",
-    "tagline": "小さな事業のWeb集客とAI活用を、今日の仕事に落とし込む実務ノート。",
+    "tagline": "小さな事業のAI活用とWeb集客を、記事で学び、相談で実装する実務メディア。",
     "siteUrl": "https://aibiz-note.jp",
     "ownerName": "AI Biz Note 編集部",
     "contactEmail": "giverslane.yamagata@gmail.com",
@@ -11,8 +11,8 @@
     "googleAdsenseClient": "ca-pub-2367995267394493"
   },
   "featured": {
-    "title": "AIエージェントを活用し、AI Biz Noteをメディア運営会社として育てる",
-    "lead": "AI Biz Noteは、記事制作、改善、収益化、トレンド調査をAIエージェントで分担しながら育てている実験型メディアです。作りながら運営し、運営しながら自己改善していく流れを実例として公開していきます。"
+    "title": "AI活用とWeb集客を、記事で学び、相談で実装する",
+    "lead": "AI Biz Noteは、小さな事業のWeb集客、LP改善、業務自動化を、実務記事と個別相談で支援するメディアです。記事で考え方を整理し、必要に応じて相談メニューから実装まで進められます。"
   },
   "categories": [
     "AI活用",
