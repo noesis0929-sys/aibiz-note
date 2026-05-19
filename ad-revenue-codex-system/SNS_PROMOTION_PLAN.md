@@ -65,3 +65,30 @@
 - 記事URLと相談URLを混ぜすぎない。
 - 1投稿1テーマにする。
 - AdSense審査中は、過度な営業より実務情報を優先する。
+
+## 下書き自動生成
+
+次のファイルをダブルクリックすると、X、Threads、note、投稿前チェックリストの下書きを作れます。
+
+```text
+generate-aibiz-social-drafts.cmd
+```
+
+出力先:
+
+```text
+ad-revenue-codex-system/social-drafts/
+```
+
+生成されるもの:
+
+- `YYYY-MM-DD-x-threads.md`: 今日のX/Threads投稿案
+- `YYYY-MM-DD-all-article-x.md`: 全記事別のX投稿案
+- `YYYY-Wxx-note-draft.md`: 週1のnote要約下書き
+- `YYYY-MM-DD-posting-checklist.md`: 投稿前チェックリスト
+
+運用ルール:
+
+- Codexは下書き生成まで。
+- X、Threads、noteへの最終投稿は人が確認してから行う。
+- 相談導線を入れる投稿は1日1本までにする。
