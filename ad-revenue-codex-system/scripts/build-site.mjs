@@ -17,6 +17,20 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function renderInlineText(value) {
+  return escapeHtml(value).replace(/https?:\/\/[^\s<]+/g, (match) => {
+    let url = match;
+    let trailing = "";
+
+    while (/[.,。、)）\]]$/.test(url)) {
+      trailing = `${url.slice(-1)}${trailing}`;
+      url = url.slice(0, -1);
+    }
+
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>${trailing}`;
+  });
+}
+
 function normalizeSiteUrl(siteUrl) {
   return String(siteUrl || "https://example.com").replace(/\/+$/, "");
 }
@@ -234,7 +248,7 @@ function renderHome(data) {
 function renderArticle(site, article, related) {
   const sections = article.sections.map((section) => `<section>
     <h2>${escapeHtml(section.heading)}</h2>
-    <p>${escapeHtml(section.body)}</p>
+    <p>${renderInlineText(section.body)}</p>
   </section>`).join("");
 
   const relatedCards = related.map((item) => `<li><a href="./${escapeHtml(item.slug)}.html">${escapeHtml(item.title)}</a></li>`).join("");
