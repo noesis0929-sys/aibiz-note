@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TanStack関連のサプライチェーン攻撃とOpenAIの対応をもとに、AIツールや開発ツールを導入する側が確認すべき安全策を整理します。">
+    <title>TanStackのnpm攻撃から考えるAI時代のツール導入リスク | AI Biz Note</title>
+    <link rel="canonical" href="https://aibiz-note.jp/posts/tanstack-npm-supply-chain-ai-security-2026.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AI Biz Note">
+    <meta property="og:title" content="TanStackのnpm攻撃から考えるAI時代のツール導入リスク | AI Biz Note">
+    <meta property="og:description" content="TanStack関連のサプライチェーン攻撃とOpenAIの対応をもとに、AIツールや開発ツールを導入する側が確認すべき安全策を整理します。">
+    <meta property="og:url" content="https://aibiz-note.jp/posts/tanstack-npm-supply-chain-ai-security-2026.html">
+    <meta property="og:image" content="https://aibiz-note.jp/assets/ai-biz-note-org-chart.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TanStackのnpm攻撃から考えるAI時代のツール導入リスク | AI Biz Note">
+    <meta name="twitter:description" content="TanStack関連のサプライチェーン攻撃とOpenAIの対応をもとに、AIツールや開発ツールを導入する側が確認すべき安全策を整理します。">
+    <meta name="twitter:image" content="https://aibiz-note.jp/assets/ai-biz-note-org-chart.png">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2367995267394493" crossorigin="anonymous"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"TanStackのnpm攻撃から考えるAI時代のツール導入リスク","description":"TanStack関連のサプライチェーン攻撃とOpenAIの対応をもとに、AIツールや開発ツールを導入する側が確認すべき安全策を整理します。","datePublished":"2026-05-21T09:30:00+09:00","dateModified":"2026-05-21T09:30:00+09:00","author":{"@type":"Organization","name":"AI Biz Note 編集部"},"publisher":{"@type":"Organization","name":"AI Biz Note"},"mainEntityOfPage":"https://aibiz-note.jp/posts/tanstack-npm-supply-chain-ai-security-2026.html"}</script>
+    <link rel="stylesheet" href="../style.css?v=20260521-news-curation">
+  </head>
+  <body>
+    <header class="topbar">
+    <a class="brand" href="../">AI Biz Note</a>
+    <nav aria-label="メインメニュー">
+      <a href="../#articles">記事</a>
+      <a href="../#categories">カテゴリ</a>
+      <a href="../about.html">運営者情報</a>
+      <a href="../consultation.html">相談メニュー</a>
+      <a href="../privacy-policy.html">ポリシー</a>
+      <a href="../contact.html">お問い合わせ</a>
+    </nav>
+  </header>
+    <main class="article-page">
+      <article class="post">
+        <div class="article-meta">
+          <span>テック・経済</span>
+          <span>7分で読める</span>
+        </div>
+        <h1>TanStackのnpm攻撃から考えるAI時代のツール導入リスク</h1>
+        <dl class="post-dates" aria-label="記事の日付">
+          <div><dt>投稿日</dt><dd><time datetime="2026-05-21T09:30:00+09:00">2026/05/21</time></dd></div>
+          <div><dt>更新日</dt><dd><time datetime="2026-05-21T09:30:00+09:00">2026/05/21</time></dd></div>
+        </dl>
+        <p class="post-lead">TanStack関連のサプライチェーン攻撃とOpenAIの対応をもとに、AIツールや開発ツールを導入する側が確認すべき安全策を整理します。</p>
+        
+        <div class="share-box" aria-label="記事を共有">
+          <span>この記事を共有</span>
+          <a href="https://twitter.com/intent/tweet?text=TanStack%E3%81%AEnpm%E6%94%BB%E6%92%83%E3%81%8B%E3%82%89%E8%80%83%E3%81%88%E3%82%8BAI%E6%99%82%E4%BB%A3%E3%81%AE%E3%83%84%E3%83%BC%E3%83%AB%E5%B0%8E%E5%85%A5%E3%83%AA%E3%82%B9%E3%82%AF&url=https%3A%2F%2Faibiz-note.jp%2Fposts%2Ftanstack-npm-supply-chain-ai-security-2026.html" target="_blank" rel="noopener">Xで共有</a>
+          <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Faibiz-note.jp%2Fposts%2Ftanstack-npm-supply-chain-ai-security-2026.html" target="_blank" rel="noopener">LINEで共有</a>
+        </div>
+        <aside class="ad-slot placeholder" aria-label="記事上部">
+    <span>広告掲載予定</span>
+    <strong>AI Biz Note</strong>
+    <small>審査完了後、読書体験を妨げない位置に広告を配置します。</small>
+  </aside>
+        <section>
+    <h2>確認済み情報</h2>
+    <p>OpenAIは2026年5月、TanStack npmをめぐるソフトウェアサプライチェーン攻撃への対応を公表しました。OpenAIはユーザーデータや本番システムへの影響は確認していないと説明しつつ、従業員端末や証明書、アプリ更新に関する対応を案内しています。参考: https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack/</p>
+  </section><section>
+    <h2>なぜ事業者にも関係あるのか</h2>
+    <p>これは開発者だけのニュースに見えますが、AIツール、ブラウザ拡張、外部サービス、ノーコード連携を使うすべての事業者に関係します。便利なツールを増やすほど、どこから入れたか、何にアクセスできるかを管理する必要があります。</p>
+  </section><section>
+    <h2>AI導入で増えるリスク</h2>
+    <p>AIエージェントは、ファイル、メール、コード、顧客情報、外部APIに接続することがあります。接続先が増えるほど、ひとつのツールやライブラリの問題が、複数の業務へ広がる可能性があります。</p>
+  </section><section>
+    <h2>最低限の確認リスト</h2>
+    <p>公式サイトから入手しているか、不要な権限を与えていないか、APIキーを共有していないか、更新通知を見ているか、使わなくなった連携を外しているかを確認します。小さなチームでも、この五つだけで事故の可能性を下げられます。</p>
+  </section><section>
+    <h2>記事としての扱い方</h2>
+    <p>セキュリティ記事は怖がらせるだけではなく、読者が今日やる確認に落とすことが大切です。AI Biz Noteでは、ニュース、影響、確認リスト、相談導線の順に整理すると実務記事として使いやすくなります。</p>
+  </section>
+        <section class="post-consultation">
+          <p class="eyebrow">Next Step</p>
+          <h2>この記事を実務に落とし込みたいときは</h2>
+          <p>AI活用、記事構成、LP改善、問い合わせ導線の整理など、状況に合わせて小さく相談できます。現在のサイトURLや困っていることが分かる範囲であれば、相談フォームから送れます。</p>
+          <a class="button dark" href="../consultation.html">相談メニューを見る</a>
+        </section>
+        <section class="post-related">
+          <h2>あわせて読みたい</h2>
+          <ul><li><a href="./ai-overviews-publisher-traffic-risk-2026.html">AI Overviewでメディアのクリックは減るのかを冷静に見る</a></li><li><a href="./google-ai-mode-search-agents-2026.html">Google検索がAIエージェント化する時代にニュースサイトは何を変えるべきか</a></li><li><a href="./youtube-ai-remix-creator-news-2026.html">YouTubeのAIリミックス機能はクリエイター収益をどう変えるか</a></li></ul>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
