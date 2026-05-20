@@ -2,23 +2,23 @@
 
 Each article has three patterns: issue, checklist, and consultation route.
 
-## AIエージェントで小さなメディア運営を会社のように回す方法
+## AIエージェントで事業メディア運営を会社のように回す方法
 
 URL: https://aibiz-note.jp/posts/ai-agent-for-small-business.html
 
 ### Draft 1
 
-[AI活用] AIエージェントで小さなメディア運営を会社のように回す方法
+[AI・エージェント] AIエージェントで事業メディア運営を会社のように回す方法
 
-AI活用というと、記事の下書きや画像作成だけを思い浮かべるかもしれません。しかし小さなメディアや事業で本当に効くのは、作成、確認、公開、分析、改善までを一つの運営サイ...
+AI活用というと、記事の下書きや画像作成だけを思い浮かべるかもしれません。しかし事業メディアや収益化プロジェクトで本当に効くのは、作成、確認、公開、分析、改善までを一...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/ai-agent-for-small-business.html
 
 ### Draft 2
 
-AIエージェントで小さなメディア運営を会社のように回す方法
+AIエージェントで事業メディア運営を会社のように回す方法
 
 Checklist:
 - AIで作るだけでなく、AIで運営する段階へ
@@ -34,7 +34,7 @@ https://aibiz-note.jp/posts/ai-agent-for-small-business.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/ai-agent-for-small-business.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -45,11 +45,11 @@ URL: https://aibiz-note.jp/posts/prompt-library-for-operations.html
 
 ### Draft 1
 
-[AI活用] 業務で使うAIプロンプト集をチーム資産にする作り方
+[AI・エージェント] 業務で使うAIプロンプト集をチーム資産にする作り方
 
 AI活用が属人的になる原因の一つは、うまくいった依頼文が個人の頭の中に残ることです。問い合わせ返信、記事構成、議事録、SNS投稿、FAQ整理など、実務で使えた依頼文は...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/prompt-library-for-operations.html
 
@@ -71,7 +71,7 @@ https://aibiz-note.jp/posts/prompt-library-for-operations.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/prompt-library-for-operations.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -82,11 +82,11 @@ URL: https://aibiz-note.jp/posts/review-request-local-business.html
 
 ### Draft 1
 
-[Web集客] 地域店舗が口コミを自然に増やすための依頼文とタイミング
+[検索・広告] 地域店舗が口コミを自然に増やすための依頼文とタイミング
 
 地域店舗では、口コミが来店前の大きな判断材料になります。星の数だけでなく、どんな悩みの人が、どんな対応を受け、どう感じたかが読まれます。口コミが増えると、検索やマップ...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/review-request-local-business.html
 
@@ -108,7 +108,7 @@ https://aibiz-note.jp/posts/review-request-local-business.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/review-request-local-business.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -119,11 +119,11 @@ URL: https://aibiz-note.jp/posts/search-console-rewrite-routine.html
 
 ### Draft 1
 
-[広告収益] Search Consoleを使って記事をリライトする月次ルーティン
+[事業収益化] Search Consoleを使って記事をリライトする月次ルーティン
 
 リライトは思いつきで行うより、SearchConsoleの数字から選ぶと効率的です。表示回数があるのにクリックが少ない記事、掲載順位が少しずつ上がっている記事、想定外...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/search-console-rewrite-routine.html
 
@@ -145,7 +145,7 @@ https://aibiz-note.jp/posts/search-console-rewrite-routine.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/search-console-rewrite-routine.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -160,7 +160,7 @@ URL: https://aibiz-note.jp/posts/no-code-automation-first-steps.html
 
 ノーコード自動化を始めるときは、ツール選びより先に作業の流れを書きます。問い合わせが来る、内容を確認する、担当者に知らせる、返信する、記録する、というように順番を見え...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/no-code-automation-first-steps.html
 
@@ -182,7 +182,7 @@ https://aibiz-note.jp/posts/no-code-automation-first-steps.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/no-code-automation-first-steps.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -193,11 +193,11 @@ URL: https://aibiz-note.jp/posts/service-menu-page-structure.html
 
 ### Draft 1
 
-[Web集客] サービスメニューページを分かりやすくする構成と料金表示の作り方
+[検索・広告] サービスメニューページを分かりやすくする構成と料金表示の作り方
 
 サービスメニューページでよくある失敗は、サービス名と料金だけを並べることです。初めて見る人は、そのメニューが自分に合うのか、何が含まれるのか、どれを選べばよいのか分か...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/service-menu-page-structure.html
 
@@ -219,7 +219,7 @@ https://aibiz-note.jp/posts/service-menu-page-structure.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/service-menu-page-structure.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -230,11 +230,11 @@ URL: https://aibiz-note.jp/posts/email-newsletter-ai-small-business.html
 
 ### Draft 1
 
-[AI活用] 小さな事業がメルマガやLINE配信をAIで続けるための文章設計
+[AI・エージェント] 小さな事業がメルマガやLINE配信をAIで続けるための文章設計
 
 メルマガやLINE配信は、毎回キャンペーンを送る場所ではありません。読者が役立つ小さな情報、よくある質問への回答、事例、季節のお知らせを混ぜることで、開封されやすくな...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/email-newsletter-ai-small-business.html
 
@@ -256,7 +256,7 @@ https://aibiz-note.jp/posts/email-newsletter-ai-small-business.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/email-newsletter-ai-small-business.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -267,11 +267,11 @@ URL: https://aibiz-note.jp/posts/adsense-affiliate-balance.html
 
 ### Draft 1
 
-[広告収益] AdSenseとアフィリエイトを同じブログで使うときの収益導線設計
+[事業収益化] AdSenseとアフィリエイトを同じブログで使うときの収益導線設計
 
 AdSenseは記事全体の閲覧から収益を得る仕組みで、アフィリエイトは特定の商品やサービスの検討につなげる仕組みです。同じブログで併用できますが、役割を混同すると読者...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/adsense-affiliate-balance.html
 
@@ -293,7 +293,7 @@ https://aibiz-note.jp/posts/adsense-affiliate-balance.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/adsense-affiliate-balance.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -304,11 +304,11 @@ URL: https://aibiz-note.jp/posts/lp-trust-elements.html
 
 ### Draft 1
 
-[LP改善] LPに信頼感を出すために入れるべき実績・事例・保証の見せ方
+[LP・導線改善] LPに信頼感を出すために入れるべき実績・事例・保証の見せ方
 
 LPでは、サービス説明より先に「この人に頼んで大丈夫か」という不安が生まれます。そのため、実績、事例、口コミ、資格、対応件数、運営者情報などの信頼材料はページ下部だけ...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/lp-trust-elements.html
 
@@ -330,7 +330,7 @@ https://aibiz-note.jp/posts/lp-trust-elements.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/lp-trust-elements.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -341,11 +341,11 @@ URL: https://aibiz-note.jp/posts/google-business-profile-post-ideas.html
 
 ### Draft 1
 
-[Web集客] Googleビジネスプロフィールの投稿ネタを毎週作る考え方
+[検索・広告] Googleビジネスプロフィールの投稿ネタを毎週作る考え方
 
 Googleビジネスプロフィールの投稿は、SNSほど拡散を狙う場所ではありません。検索やマップで見つけた人が「今も営業している」「雰囲気が分かる」「相談してよさそう」...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/google-business-profile-post-ideas.html
 
@@ -367,7 +367,7 @@ https://aibiz-note.jp/posts/google-business-profile-post-ideas.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/google-business-profile-post-ideas.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -382,7 +382,7 @@ URL: https://aibiz-note.jp/posts/meeting-notes-ai-workflow.html
 
 打ち合わせメモをAIで活用するなら、最初から整った文章にしようとしなくて大丈夫です。むしろ重要なのは、決まったこと、保留になったこと、誰が何をするのか、期限、相手の懸...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/meeting-notes-ai-workflow.html
 
@@ -404,7 +404,7 @@ https://aibiz-note.jp/posts/meeting-notes-ai-workflow.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/meeting-notes-ai-workflow.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -415,11 +415,11 @@ URL: https://aibiz-note.jp/posts/ai-first-customer-support-template.html
 
 ### Draft 1
 
-[AI活用] AIで問い合わせ対応を整えるための返信テンプレート設計入門
+[AI・エージェント] AIで問い合わせ対応を整えるための返信テンプレート設計入門
 
 問い合わせ対応をAIに任せるとき、いきなり自動返信を作るよりも、まず人が使いやすい返信の型を作るほうが安全です。挨拶、要件の確認、回答、次の行動、締めの順番を固定して...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/ai-first-customer-support-template.html
 
@@ -441,7 +441,7 @@ https://aibiz-note.jp/posts/ai-first-customer-support-template.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/ai-first-customer-support-template.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -452,11 +452,11 @@ URL: https://aibiz-note.jp/posts/local-seo-content-plan.html
 
 ### Draft 1
 
-[Web集客] 地域ビジネスが検索で見つかるための記事テーマの作り方
+[検索・広告] 地域ビジネスが検索で見つかるための記事テーマの作り方
 
 地域ビジネスの記事は、サービス名だけで考えると競合が強くなりがちです。地域名、悩み、利用シーンを組み合わせると、実際のお客様に近いテーマになります。たとえば「駅名整体...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/local-seo-content-plan.html
 
@@ -478,7 +478,7 @@ https://aibiz-note.jp/posts/local-seo-content-plan.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/local-seo-content-plan.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -489,11 +489,11 @@ URL: https://aibiz-note.jp/posts/lp-first-view-checkpoints.html
 
 ### Draft 1
 
-[LP改善] LPのファーストビューで離脱を減らすための確認ポイント
+[LP・導線改善] LPのファーストビューで離脱を減らすための確認ポイント
 
 ファーストビューでは、会社の言いたいことよりも、訪問者が自分向けだと分かることが大切です。対象者、悩み、得られる結果を短い言葉で置きます。抽象的なキャッチコピーだけで...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/lp-first-view-checkpoints.html
 
@@ -515,7 +515,7 @@ https://aibiz-note.jp/posts/lp-first-view-checkpoints.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/lp-first-view-checkpoints.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -526,11 +526,11 @@ URL: https://aibiz-note.jp/posts/adsense-article-quality-check.html
 
 ### Draft 1
 
-[広告収益] 広告収益ブログで記事品質を上げるための見直しチェック
+[事業収益化] 広告収益ブログで記事品質を上げるための見直しチェック
 
 広告収益を狙う記事では、読者が検索した理由にきちんと答えることが基本です。導入だけで答えをぼかしたり、一般論だけで終わったりすると、読者はすぐ離脱します。悩み、判断基...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/adsense-article-quality-check.html
 
@@ -552,7 +552,7 @@ https://aibiz-note.jp/posts/adsense-article-quality-check.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/adsense-article-quality-check.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -567,7 +567,7 @@ URL: https://aibiz-note.jp/posts/weekly-ai-workflow-small-team.html
 
 AI活用をチームで始めるときは、すべての業務を変えようとしないほうが続きます。議事録、問い合わせ返信、SNS下書き、記事構成など、週に何度も発生する作業を一つ選びます...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/weekly-ai-workflow-small-team.html
 
@@ -589,7 +589,7 @@ https://aibiz-note.jp/posts/weekly-ai-workflow-small-team.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/weekly-ai-workflow-small-team.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -600,11 +600,11 @@ URL: https://aibiz-note.jp/posts/service-page-faq-writing.html
 
 ### Draft 1
 
-[Web集客] サービスページに載せるFAQの作り方と問い合わせ削減の考え方
+[検索・広告] サービスページに載せるFAQの作り方と問い合わせ削減の考え方
 
 FAQはサービスの魅力を重ねて伝える場所ではなく、申し込み前の迷いを解消する場所です。料金、納期、キャンセル、対応範囲、準備物、支払い方法など、聞かれたら答える内容を...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/service-page-faq-writing.html
 
@@ -626,7 +626,7 @@ https://aibiz-note.jp/posts/service-page-faq-writing.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/service-page-faq-writing.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -637,11 +637,11 @@ URL: https://aibiz-note.jp/posts/ai-blog-outline-to-draft.html
 
 ### Draft 1
 
-[AI活用] AIで記事構成から本文下書きまで作るときの実務手順
+[AI・エージェント] AIで記事構成から本文下書きまで作るときの実務手順
 
 AIに記事を書かせる前に、誰に向けた記事か、読後に何をしてほしいかを決めます。初心者向けなのか、比較検討中の人向けなのかで、必要な説明は変わります。ここが曖昧なまま本...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/ai-blog-outline-to-draft.html
 
@@ -663,7 +663,7 @@ https://aibiz-note.jp/posts/ai-blog-outline-to-draft.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/ai-blog-outline-to-draft.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -674,11 +674,11 @@ URL: https://aibiz-note.jp/posts/conversion-button-copy.html
 
 ### Draft 1
 
-[LP改善] 問い合わせボタンの文言を改善してクリックしやすくする考え方
+[LP・導線改善] 問い合わせボタンの文言を改善してクリックしやすくする考え方
 
 ボタン文言が「送信」「詳しく見る」だけだと、訪問者は次に何が起きるか分かりません。「無料相談を予約する」「料金表を確認する」「LINEで空き状況を聞く」のように、行動...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/conversion-button-copy.html
 
@@ -700,7 +700,7 @@ https://aibiz-note.jp/posts/conversion-button-copy.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/conversion-button-copy.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -711,11 +711,11 @@ URL: https://aibiz-note.jp/posts/search-console-beginner-review.html
 
 ### Draft 1
 
-[広告収益] Search Consoleで初心者が最初に見るべき三つの数字
+[事業収益化] Search Consoleで初心者が最初に見るべき三つの数字
 
 表示回数は、検索結果にどれだけ出ているかを示します。クリックが少なくても表示回数が増えている記事は、改善の余地があります。まずはどの記事が検索に出始めているかを見つけ...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/search-console-beginner-review.html
 
@@ -737,7 +737,7 @@ https://aibiz-note.jp/posts/search-console-beginner-review.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/search-console-beginner-review.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -752,7 +752,7 @@ URL: https://aibiz-note.jp/posts/estimate-form-automation.html
 
 見積もりフォームを自由記入だけにすると、AIで整理する前に内容のばらつきが大きくなります。目的、希望納期、予算感、必要な機能、参考サイトなどは選択式や短い入力欄に分け...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/estimate-form-automation.html
 
@@ -774,7 +774,7 @@ https://aibiz-note.jp/posts/estimate-form-automation.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/estimate-form-automation.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -785,11 +785,11 @@ URL: https://aibiz-note.jp/posts/local-business-lp-checklist.html
 
 ### Draft 1
 
-[LP改善] 小規模店舗の集客LPで最初に直すべき7項目
+[LP・導線改善] 小規模店舗の集客LPで最初に直すべき7項目
 
 店舗のLPで最初に見るべきなのは、デザインの派手さではなく、初めて見た人が安心して次の行動に進めるかです。場所、料金、予約方法、対象者、実績がすぐ分からないページは、...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/local-business-lp-checklist.html
 
@@ -811,31 +811,31 @@ https://aibiz-note.jp/posts/local-business-lp-checklist.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/local-business-lp-checklist.html
 Consultation: https://aibiz-note.jp/consultation.html
 
-## 広告収入で月20万円を目指すためのPV・記事数・改善ロードマップ
+## 広告だけに頼らず月100万円を目指す収益導線ロードマップ
 
 URL: https://aibiz-note.jp/posts/adsense-roadmap-200k.html
 
 ### Draft 1
 
-[広告収益] 広告収入で月20万円を目指すためのPV・記事数・改善ロードマップ
+[事業収益化] 広告だけに頼らず月100万円を目指す収益導線ロードマップ
 
-広告収入は、PVとRPMの掛け算で考えると現実が見えます。RPMが400円なら月20万円には約50万PV、800円なら約25万PV、1500円なら約13.4万PVが必...
+広告収入は、PVとRPMの掛け算で考えると現実が見えます。RPMが800円なら月100万円には約125万PVが必要です。事業メディアが最初から広告だけでこの数字を狙う...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/adsense-roadmap-200k.html
 
 ### Draft 2
 
-広告収入で月20万円を目指すためのPV・記事数・改善ロードマップ
+広告だけに頼らず月100万円を目指す収益導線ロードマップ
 
 Checklist:
-- 月20万円はPVから逆算する
+- 月100万円は広告だけで狙わない
 - 最初は記事数よりテーマ選び
 - 90日で目指す状態
 - 広告以外の導線も持つ
@@ -848,7 +848,7 @@ https://aibiz-note.jp/posts/adsense-roadmap-200k.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/adsense-roadmap-200k.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -859,11 +859,11 @@ URL: https://aibiz-note.jp/posts/google-business-profile-basics.html
 
 ### Draft 1
 
-[Web集客] Googleビジネスプロフィールで店舗集客を始める基本
+[検索・広告] Googleビジネスプロフィールで店舗集客を始める基本
 
 近くの美容室、整体、飲食店を探す人は、検索結果だけでなくGoogleマップを見ます。Googleビジネスプロフィールが整っていないと、比較候補にすら入れないことがあります。
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/google-business-profile-basics.html
 
@@ -885,7 +885,7 @@ https://aibiz-note.jp/posts/google-business-profile-basics.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/google-business-profile-basics.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -900,7 +900,7 @@ URL: https://aibiz-note.jp/posts/sns-post-automation.html
 
 SNSはお客様との距離が近い場所なので、完全自動投稿よりも、AIに下書きを作らせて人が確認する半自動が向いています。言い回しやタイミングは、人の判断を残したほうが信頼...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/sns-post-automation.html
 
@@ -922,7 +922,7 @@ https://aibiz-note.jp/posts/sns-post-automation.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/sns-post-automation.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -933,11 +933,11 @@ URL: https://aibiz-note.jp/posts/inquiry-automation-ai.html
 
 ### Draft 1
 
-[AI活用] 問い合わせ対応をAIで楽にする前に決めるべきこと
+[AI・エージェント] 問い合わせ対応をAIで楽にする前に決めるべきこと
 
 問い合わせ対応は効率化しやすい一方で、雑に自動化すると信頼を落とします。AIに任せる前に、どこまで回答してよいか、どこから人に渡すかを決める必要があります。
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/inquiry-automation-ai.html
 
@@ -959,7 +959,7 @@ https://aibiz-note.jp/posts/inquiry-automation-ai.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/inquiry-automation-ai.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -970,11 +970,11 @@ URL: https://aibiz-note.jp/posts/lp-price-guide.html
 
 ### Draft 1
 
-[LP改善] LP制作費用の相場と、安く頼む前に見るべきポイント
+[LP・導線改善] LP制作費用の相場と、安く頼む前に見るべきポイント
 
 LP制作の費用は、デザインだけなのか、原稿作成、写真選定、公開設定、問い合わせフォームまで含むのかで大きく変わります。金額だけを見ると比較を誤りやすくなります。
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/lp-price-guide.html
 
@@ -996,7 +996,7 @@ https://aibiz-note.jp/posts/lp-price-guide.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/lp-price-guide.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -1007,11 +1007,11 @@ URL: https://aibiz-note.jp/posts/web-marketing-for-solo-business.html
 
 ### Draft 1
 
-[Web集客] 個人事業主が最初に整えるWeb集客の全体像
+[検索・広告] 個人事業主が最初に整えるWeb集客の全体像
 
 Web集客では、SNS、ホームページ、LP、Googleビジネスプロフィールがそれぞれ違う役割を持ちます。全部を同じように頑張るより、入口、説明、問い合わせの流れを作...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/web-marketing-for-solo-business.html
 
@@ -1033,7 +1033,7 @@ https://aibiz-note.jp/posts/web-marketing-for-solo-business.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/web-marketing-for-solo-business.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -1044,11 +1044,11 @@ URL: https://aibiz-note.jp/posts/ai-tool-comparison-small-business.html
 
 ### Draft 1
 
-[AI活用] 小規模事業で使いやすいAIツールの選び方
+[AI・エージェント] 小規模事業で使いやすいAIツールの選び方
 
 AIツールは種類が多く、話題のものを追いかけるだけでは使いこなせません。文章作成、画像作成、議事録、問い合わせ対応、データ整理など、何に使うかを先に決めます。
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/ai-tool-comparison-small-business.html
 
@@ -1070,7 +1070,7 @@ https://aibiz-note.jp/posts/ai-tool-comparison-small-business.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/ai-tool-comparison-small-business.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -1081,11 +1081,11 @@ URL: https://aibiz-note.jp/posts/blog-topic-research-ai.html
 
 ### Draft 1
 
-[広告収益] AIでブログ記事テーマを探すときのリサーチ手順
+[事業収益化] AIでブログ記事テーマを探すときのリサーチ手順
 
 記事テーマ探しでAIを使うときは、ジャンル、読者、収益導線、避けたいテーマを先に決めます。条件がないまま依頼すると、広すぎる候補ばかり出てしまいます。
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/blog-topic-research-ai.html
 
@@ -1107,7 +1107,7 @@ https://aibiz-note.jp/posts/blog-topic-research-ai.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/blog-topic-research-ai.html
 Consultation: https://aibiz-note.jp/consultation.html
@@ -1118,11 +1118,11 @@ URL: https://aibiz-note.jp/posts/ai-search-content-funnel.html
 
 ### Draft 1
 
-[Web集客] AI検索時代に記事だけで終わらせない導線設計
+[検索・広告] AI検索時代に記事だけで終わらせない導線設計
 
 AI検索やAIOverviewsが広がると、単純な用語説明や一般的な手順は検索結果の中で要約されやすくなります。読者が検索結果だけで満足すれば、サイトへ来る理由は弱く...
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 https://aibiz-note.jp/posts/ai-search-content-funnel.html
 
@@ -1144,8 +1144,45 @@ https://aibiz-note.jp/posts/ai-search-content-funnel.html
 
 After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: https://aibiz-note.jp/posts/ai-search-content-funnel.html
+Consultation: https://aibiz-note.jp/consultation.html
+
+## Google検索のAIエージェント化で事業サイトは何を変えるべきか
+
+URL: https://aibiz-note.jp/posts/google-search-io-2026-ai-agents.html
+
+### Draft 1
+
+[検索・広告] Google検索のAIエージェント化で事業サイトは何を変えるべきか
+
+2026年5月19日、GoogleはSearchI/O2026の発表で、AIOverviewからAIModeへ会話を続けられる流れや、条件に合う情報を探す情報エージェ...
+
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
+
+https://aibiz-note.jp/posts/google-search-io-2026-ai-agents.html
+
+### Draft 2
+
+Google検索のAIエージェント化で事業サイトは何を変えるべきか
+
+Checklist:
+- 何が起きたか
+- 確認済み情報と推測を分ける
+- 事業者に関係あること
+- 記事は答えだけでなく判断材料にする
+
+The article organizes the points in the order people usually get stuck.
+
+https://aibiz-note.jp/posts/google-search-io-2026-ai-agents.html
+
+### Draft 3
+
+After reading, you may still wonder what to improve first in your own business.
+
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
+
+Article: https://aibiz-note.jp/posts/google-search-io-2026-ai-agents.html
 Consultation: https://aibiz-note.jp/consultation.html
 

@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260516-social";
+const assetVersion = "20260520-broad-growth";
 
 function escapeHtml(value) {
   return String(value)
@@ -149,7 +149,7 @@ function renderHome(data) {
 
   return shell({
     site,
-    title: "AIとWeb集客の実務ノート",
+    title: "AI時代の事業成長と収益化ノート",
     description: site.tagline,
     url: absoluteUrl(site, "/"),
     body: `<main>
@@ -169,19 +169,19 @@ function renderHome(data) {
       <section class="metrics" aria-label="メディアの特徴">
         <div>
           <span>対象</span>
-          <strong>小さな事業</strong>
+          <strong>事業成長</strong>
         </div>
         <div>
           <span>テーマ</span>
-          <strong>AI活用</strong>
+          <strong>AI・検索・SNS</strong>
         </div>
         <div>
           <span>目的</span>
-          <strong>集客改善</strong>
+          <strong>収益化</strong>
         </div>
         <div>
           <span>方針</span>
-          <strong>実務目線</strong>
+          <strong>実装目線</strong>
         </div>
       </section>
 
@@ -189,7 +189,7 @@ function renderHome(data) {
         <div class="section-heading">
           <p class="eyebrow">Start Here</p>
           <h2>まず読んでほしい記事</h2>
-          <p class="lead">AIやWeb集客に詳しくなくても、仕事の中で使えるところから始められる記事を選びました。</p>
+        <p class="lead">AIニュース、検索・広告、SNS、業務自動化、商品化まで、事業の成長に直結する記事を選びました。</p>
         </div>
         <div class="article-grid featured-grid">
           ${latest}
@@ -212,7 +212,7 @@ function renderHome(data) {
         <div class="section-heading">
           <p class="eyebrow">Consultation</p>
           <h2>記事で学んだことを、実装まで進める</h2>
-          <p class="lead">AI活用、Web集客、LP改善、問い合わせ導線の整理など、記事だけでは止まりやすい作業を個別相談で前に進めます。</p>
+          <p class="lead">AI戦略、検索・広告、SNS導線、商品化、問い合わせ導線、業務自動化など、記事だけでは止まりやすい作業を個別相談で前に進めます。</p>
         </div>
         <a class="button dark" href="./consultation.html">相談メニューを見る</a>
       </section>
@@ -221,7 +221,7 @@ function renderHome(data) {
         <div class="section-heading">
           <p class="eyebrow">Articles</p>
           <h2>新着記事</h2>
-          <p class="lead">店舗集客、LP改善、AI自動化、広告収益化を中心に、実務で使える内容を増やしています。</p>
+          <p class="lead">AIニュース解説、検索・広告、SNS、商品化、業務自動化、相談導線を中心に、実務で使える内容を増やしています。</p>
         </div>
         <div class="article-grid">
           ${allArticles}
@@ -306,7 +306,7 @@ function renderAbout(site) {
       <section class="section doc">
         <p class="eyebrow">About</p>
         <h1>運営者情報</h1>
-        <p>${escapeHtml(site.name)}は、小さな事業のWeb集客、LP改善、AI活用を、記事で学び、相談で実装できる形に整理する実務メディアです。</p>
+        <p>${escapeHtml(site.name)}は、AIニュース、検索・広告、SNS、業務自動化、商品化、相談・受託支援を横断し、事業成長と収益化につながる実務知を整理するメディアです。</p>
         <dl class="article-stats">
           <div><dt>運営者</dt><dd>${escapeHtml(site.ownerName)}</dd></div>
           <div><dt>連絡先</dt><dd>${escapeHtml(site.contactEmail)}</dd></div>
@@ -346,12 +346,12 @@ function renderConsultation(site) {
   return shell({
     site,
     title: "相談メニュー",
-    description: "AI活用、Web集客、LP改善、問い合わせ導線を実装へ進める相談メニューです。",
+    description: "AI戦略、検索・広告、SNS導線、商品化、問い合わせ導線、業務自動化を実装へ進める相談メニューです。",
     body: `<main class="plain-page">
       <section class="section doc">
         <p class="eyebrow">Consultation</p>
-        <h1>Web集客・AI実装相談</h1>
-        <p>AI Biz Noteでは、小さな事業者や個人事業主向けに、Web集客とAI活用を実務へ落とし込む相談を受け付けています。記事で学んだ内容を、自分のサイト、問い合わせ導線、日々の業務にどう実装するかを一緒に整理します。</p>
+        <h1>AI時代の事業成長・収益化相談</h1>
+        <p>AI Biz Noteでは、事業者、個人事業主、チーム向けに、AI活用、検索・広告、SNS導線、商品化、問い合わせ導線、業務自動化を実務へ落とし込む相談を受け付けています。記事で学んだ内容を、自分のサイト、商品、相談導線、日々の業務にどう実装するかを一緒に整理します。</p>
         <div class="service-list">
           <section>
             <h2>AI活用の実装相談</h2>

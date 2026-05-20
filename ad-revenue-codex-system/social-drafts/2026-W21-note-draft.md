@@ -1,48 +1,48 @@
-﻿# Weekly note draft: AI use and web traffic
+﻿# Weekly note draft: AI, business growth, and monetization
 
-AI Biz Note collects practical articles about AI use, web traffic, LP improvement, and small-business operations.
+AI Biz Note collects practical articles about AI, search, ads, SNS, automation, productization, and business growth.
 
-This weekly note draft summarizes five articles and links readers back to the main site.
+This weekly note draft summarizes five articles and links readers back to the main site and consultation menu.
 
-## 1. 小規模店舗の集客LPで最初に直すべき7項目
+## 1. AIで記事構成から本文下書きまで作るときの実務手順
+
+ブログ記事をAIで作るときに、テーマ決め、構成、本文、確認までを無理なく進める手順をまとめます。
+
+First point to check: 先に読者と目的を決める
+
+Article: https://aibiz-note.jp/posts/ai-blog-outline-to-draft.html
+
+## 2. 問い合わせボタンの文言を改善してクリックしやすくする考え方
+
+LPやサービスページのボタン文言を見直し、訪問者が次の行動を取りやすくするための具体的な改善ポイントを紹介します。
+
+First point to check: 押した後に何が起きるかを書く
+
+Article: https://aibiz-note.jp/posts/conversion-button-copy.html
+
+## 3. Search Consoleで初心者が最初に見るべき三つの数字
+
+ブログやメディアを育てるときに、Search Consoleで最初に確認したい表示回数、クリック数、検索語句の見方を解説します。
+
+First point to check: 表示回数は可能性を見る数字
+
+Article: https://aibiz-note.jp/posts/search-console-beginner-review.html
+
+## 4. 見積もり依頼フォームをAI活用しやすくする入力項目の設計
+
+見積もり依頼をAIで整理しやすくするために、フォームで集めるべき情報と入力項目の考え方をまとめます。
+
+First point to check: 自由記入だけにしない
+
+Article: https://aibiz-note.jp/posts/estimate-form-automation.html
+
+## 5. 小規模店舗の集客LPで最初に直すべき7項目
 
 美容室、整体、サロン、飲食店などのLPで、問い合わせ前の不安を減らすために見直したい項目をまとめます。
 
 First point to check: LPはきれいさより分かりやすさが先
 
 Article: https://aibiz-note.jp/posts/local-business-lp-checklist.html
-
-## 2. 広告収入で月20万円を目指すためのPV・記事数・改善ロードマップ
-
-広告収入で月20万円を目指すために必要なPV、記事数、改善サイクルを現実的に整理します。
-
-First point to check: 月20万円はPVから逆算する
-
-Article: https://aibiz-note.jp/posts/adsense-roadmap-200k.html
-
-## 3. Googleビジネスプロフィールで店舗集客を始める基本
-
-地域店舗がGoogle検索とGoogleマップから見つけてもらうために、最初に整えるべき項目を解説します。
-
-First point to check: 地域集客ではGoogleマップが入り口になる
-
-Article: https://aibiz-note.jp/posts/google-business-profile-basics.html
-
-## 4. SNS投稿をAIで続けるための現実的な自動化手順
-
-SNS投稿を毎回ゼロから考えずに続けるため、AIを使ったネタ出し、下書き、改善の流れを紹介します。
-
-First point to check: SNS自動化は全自動より半自動が安全
-
-Article: https://aibiz-note.jp/posts/sns-post-automation.html
-
-## 5. 問い合わせ対応をAIで楽にする前に決めるべきこと
-
-問い合わせ対応をAI化する前に、回答範囲、確認ルール、テンプレートをどう整えるべきかを解説します。
-
-First point to check: 問い合わせ対応は信頼を左右する
-
-Article: https://aibiz-note.jp/posts/inquiry-automation-ai.html
 
 ## Consultation
 

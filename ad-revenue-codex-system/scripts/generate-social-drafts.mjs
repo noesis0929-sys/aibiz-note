@@ -55,7 +55,7 @@ function makeXPosts(site, article) {
 
 ${section}
 
-Point: Start by choosing one place where this applies to your own work.
+Point: Connect this topic to one action that can improve growth, revenue, or operations.
 
 ${url}`,
     `${article.title}
@@ -68,7 +68,7 @@ The article organizes the points in the order people usually get stuck.
 ${url}`,
     `After reading, you may still wonder what to improve first in your own business.
 
-AI Biz Note can help with AI use, web traffic, LP improvement, and inquiry flow.
+AI Biz Note can help with AI strategy, search, ads, SNS flow, productization, automation, and inquiry flow.
 
 Article: ${url}
 Consultation: ${normalizeSiteUrl(site.siteUrl)}/consultation.html`
@@ -80,18 +80,18 @@ function makeThreadsPost(site, article) {
 
 ${compact(article.description, 100)}
 
-AI Biz Note is designed so readers can move from learning in articles to implementation through consultation.
+AI Biz Note connects AI news, search, ads, SNS, automation, productization, and consultation into practical business growth.
 
 ${articleUrl(site, article)}`;
 }
 
 function makeNoteDraft(site, articles, weekKey) {
   const lines = [];
-  lines.push("# Weekly note draft: AI use and web traffic");
+  lines.push("# Weekly note draft: AI, business growth, and monetization");
   lines.push("");
-  lines.push("AI Biz Note collects practical articles about AI use, web traffic, LP improvement, and small-business operations.");
+  lines.push("AI Biz Note collects practical articles about AI, search, ads, SNS, automation, productization, and business growth.");
   lines.push("");
-  lines.push("This weekly note draft summarizes five articles and links readers back to the main site.");
+  lines.push("This weekly note draft summarizes five articles and links readers back to the main site and consultation menu.");
   lines.push("");
 
   for (const [index, article] of articles.entries()) {
