@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260520-broad-growth";
+const assetVersion = "20260521-news-curation";
 
 function escapeHtml(value) {
   return String(value)
@@ -149,7 +149,7 @@ function renderHome(data) {
 
   return shell({
     site,
-    title: "AI時代の事業成長と収益化ノート",
+    title: "AI時代のニュース解説と事業活用ノート",
     description: site.tagline,
     url: absoluteUrl(site, "/"),
     body: `<main>
@@ -169,15 +169,15 @@ function renderHome(data) {
       <section class="metrics" aria-label="メディアの特徴">
         <div>
           <span>対象</span>
-          <strong>事業成長</strong>
+          <strong>ニュース解説</strong>
         </div>
         <div>
           <span>テーマ</span>
-          <strong>AI・検索・SNS</strong>
+          <strong>AI・経済・SNS</strong>
         </div>
         <div>
           <span>目的</span>
-          <strong>収益化</strong>
+          <strong>事業活用</strong>
         </div>
         <div>
           <span>方針</span>
@@ -189,7 +189,7 @@ function renderHome(data) {
         <div class="section-heading">
           <p class="eyebrow">Start Here</p>
           <h2>まず読んでほしい記事</h2>
-        <p class="lead">AIニュース、検索・広告、SNS、業務自動化、商品化まで、事業の成長に直結する記事を選びました。</p>
+        <p class="lead">AI、テック、経済、検索・広告、SNS、働き方、企業動向まで、事業のヒントになるニュースと解説を選びました。</p>
         </div>
         <div class="article-grid featured-grid">
           ${latest}
@@ -212,7 +212,7 @@ function renderHome(data) {
         <div class="section-heading">
           <p class="eyebrow">Consultation</p>
           <h2>記事で学んだことを、実装まで進める</h2>
-          <p class="lead">AI戦略、検索・広告、SNS導線、商品化、問い合わせ導線、業務自動化など、記事だけでは止まりやすい作業を個別相談で前に進めます。</p>
+          <p class="lead">ニュースで見えた変化を、自分の事業、商品、SNS、問い合わせ導線、業務自動化へ落とし込む作業を個別相談で前に進めます。</p>
         </div>
         <a class="button dark" href="./consultation.html">相談メニューを見る</a>
       </section>
@@ -221,7 +221,7 @@ function renderHome(data) {
         <div class="section-heading">
           <p class="eyebrow">Articles</p>
           <h2>新着記事</h2>
-          <p class="lead">AIニュース解説、検索・広告、SNS、商品化、業務自動化、相談導線を中心に、実務で使える内容を増やしています。</p>
+          <p class="lead">AIニュース、テック・経済、検索・広告・SNS、働き方、副業、収益化、ツール活用を中心に、実務で使える内容を増やしています。</p>
         </div>
         <div class="article-grid">
           ${allArticles}
@@ -306,7 +306,7 @@ function renderAbout(site) {
       <section class="section doc">
         <p class="eyebrow">About</p>
         <h1>運営者情報</h1>
-        <p>${escapeHtml(site.name)}は、AIニュース、検索・広告、SNS、業務自動化、商品化、相談・受託支援を横断し、事業成長と収益化につながる実務知を整理するメディアです。</p>
+        <p>${escapeHtml(site.name)}は、AI、テック、経済、検索・広告、SNS、働き方、企業動向のニュースを広く整理し、事業成長と収益化に使える視点まで解説するメディアです。</p>
         <dl class="article-stats">
           <div><dt>運営者</dt><dd>${escapeHtml(site.ownerName)}</dd></div>
           <div><dt>連絡先</dt><dd>${escapeHtml(site.contactEmail)}</dd></div>
