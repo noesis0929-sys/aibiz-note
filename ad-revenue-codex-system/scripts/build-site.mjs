@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260521-news-curation";
+const assetVersion = "20260521-links";
 
 function escapeHtml(value) {
   return String(value)
