@@ -24,6 +24,46 @@
   ],
   "articles": [
     {
+      "slug": "openai-deployment-company-ai-implementation-business-2026",
+      "title": "OpenAI Deployment Companyから考えるAI導入支援ビジネスの伸び方",
+      "category": "AIニュース",
+      "description": "OpenAIがAIを企業の現場に導入するDeployment Companyを立ち上げた流れをもとに、AI活用メディアが相談・実装支援へ広げる方法を整理します。",
+      "targetKeyword": "OpenAI Deployment Company AI導入支援",
+      "readingMinutes": 7,
+      "publishedAt": "2026-05-22T09:00:00+09:00",
+      "updatedAt": "2026-05-22T09:00:00+09:00",
+      "sections": [
+        {
+          "heading": "確認済み情報",
+          "body": "OpenAIは2026年5月11日、企業がAIシステムを日常業務に組み込むことを支援するOpenAI Deployment Companyを立ち上げると発表しました。OpenAIはTomoroの買収にも合意し、約150人のForward Deployed EngineersとDeployment Specialistsを迎えると説明しています。初期投資は40億ドル超とされ、TPG、Bain、McKinsey、Capgeminiなどの投資・コンサルティング・システム統合パートナーも関わります。参考: https://openai.com/index/openai-launches-the-deployment-company/"
+        },
+        {
+          "heading": "ニュースの本質",
+          "body": "このニュースの本質は、AIの価値がモデル単体ではなく、現場にどう入るかへ移っていることです。企業はChatGPTやAPIを契約するだけでは成果を出しにくく、業務フロー、社内データ、承認、セキュリティ、教育、効果測定まで含めて設計する必要があります。AI導入はソフトの購入ではなく、業務の再設計になっています。"
+        },
+        {
+          "heading": "AI Biz Noteへの影響",
+          "body": "AI Biz Noteも、記事で情報をまとめるだけでは月100万円には届きにくいです。ニュース解説を入口にして、読者が自分の事業なら何をAI化できるかを考え、相談フォームから実装支援へ進む導線を作る必要があります。OpenAIが企業向けに進めている構造を、小さく個人事業や中小チーム向けに再現するイメージです。"
+        },
+        {
+          "heading": "相談メニューで売れる形",
+          "body": "売りやすいのは「AIを教えます」ではなく、「問い合わせ対応をAIで整理する」「記事制作とSNS投稿を半自動化する」「社内メモをレポート化する」「広告・検索・SNSの週次チェックを仕組み化する」のように、具体的な業務単位にしたメニューです。成果物が見えるほど、相談から実装支援へつながりやすくなります。"
+        },
+        {
+          "heading": "最初に作るべき商品",
+          "body": "AI Biz Noteでは、まず低単価のnoteやチェックリストで信頼を作り、次に30分相談、最後に5万円から30万円程度の実装支援へつなげる設計が現実的です。たとえば「AI業務導入診断」「ニュース記事運用の自動化設計」「問い合わせ対応テンプレート構築」「Xとnote導線設計」などが候補になります。"
+        },
+        {
+          "heading": "今日やること",
+          "body": "この記事を読んだ人がすぐ動けるように、相談フォームの選択肢に「AI導入・業務自動化」「記事/SNS運用の仕組み化」「AI実装支援」を明確に置くべきです。記事末尾には、相談前に用意する情報として、現在の業務、困っている作業、使っているツール、希望する成果、予算感を案内します。"
+        },
+        {
+          "heading": "注意点",
+          "body": "AI導入支援は、過度な成果保証をしないことが重要です。AdSense審査中のメディアとしても、必ず稼げる、必ず自動化できるという表現は避け、業務整理、試験導入、確認、改善のプロセスを示す方が安全です。確認済み情報とAI Biz Noteとしての見解を分けて書くことで、ニュース解説としての信頼も守れます。"
+        }
+      ]
+    },
+    {
       "slug": "google-ai-mode-search-agents-2026",
       "title": "Google検索がAIエージェント化する時代にニュースサイトは何を変えるべきか",
       "category": "検索・広告・SNS",
