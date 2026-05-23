@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260521-links";
+const assetVersion = "20260523-consultation";
 
 function escapeHtml(value) {
   return String(value)
@@ -293,7 +293,7 @@ function renderArticle(site, article, related) {
         <section class="post-consultation">
           <p class="eyebrow">Next Step</p>
           <h2>この記事を実務に落とし込みたいときは</h2>
-          <p>AI活用、記事構成、LP改善、問い合わせ導線の整理など、状況に合わせて小さく相談できます。現在のサイトURLや困っていることが分かる範囲であれば、相談フォームから送れます。</p>
+          <p>AI導入、ニュース記事運用、SNS導線、問い合わせフォーム改善、Codexを使った実装支援など、状況に合わせて相談できます。現在のサイトURL、AI化したい作業、困っていることが分かる範囲であれば、相談フォームから送れます。</p>
           <a class="button dark" href="../consultation.html">相談メニューを見る</a>
         </section>
         <section class="post-related">
@@ -360,28 +360,32 @@ function renderConsultation(site) {
   return shell({
     site,
     title: "相談メニュー",
-    description: "AI戦略、検索・広告、SNS導線、商品化、問い合わせ導線、業務自動化を実装へ進める相談メニューです。",
+    description: "AI導入、ニュース記事運用、SNS導線、問い合わせ改善、業務自動化、実装支援を相談できるメニューです。",
     body: `<main class="plain-page">
       <section class="section doc">
         <p class="eyebrow">Consultation</p>
-        <h1>AI時代の事業成長・収益化相談</h1>
-        <p>AI Biz Noteでは、事業者、個人事業主、チーム向けに、AI活用、検索・広告、SNS導線、商品化、問い合わせ導線、業務自動化を実務へ落とし込む相談を受け付けています。記事で学んだ内容を、自分のサイト、商品、相談導線、日々の業務にどう実装するかを一緒に整理します。</p>
+        <h1>AI導入・ニュース運用・実装支援相談</h1>
+        <p>AI Biz Noteでは、事業者、個人事業主、チーム向けに、AIニュースを自分の事業へどう使うか、記事やSNSをどう運用するか、問い合わせや業務をどうAI化するかを整理します。相談だけで終わらせず、必要に応じて実装支援まで進められる形を前提にしています。</p>
         <div class="service-list">
           <section>
-            <h2>AI活用の実装相談</h2>
-            <p>問い合わせ返信、議事録、記事構成、SNS投稿、社内メモ整理など、今の仕事でAIに任せやすい作業を洗い出します。使うツールよりも、依頼文、確認ルール、保存するテンプレートを先に整えます。</p>
+            <h2>AI導入・業務自動化相談</h2>
+            <p>問い合わせ返信、議事録、記事構成、SNS投稿、社内メモ整理、週次レポートなど、今の仕事でAIに任せやすい作業を洗い出します。使うツールよりも、依頼文、確認ルール、保存するテンプレートを先に整えます。</p>
           </section>
           <section>
-            <h2>記事テーマと集客導線の相談</h2>
-            <p>検索から読まれる記事を増やすため、読者の悩み、検索意図、内部リンク、収益導線を整理します。記事数を増やすだけでなく、相談や問い合わせにつながるテーマを優先します。</p>
+            <h2>ニュース記事・SNS運用の仕組み化相談</h2>
+            <p>AI、テック、経済、SNS、広告のニュースを拾い、記事、X投稿、note、相談導線へつなげる流れを整理します。記事数を増やすだけでなく、相談や問い合わせにつながるテーマを優先します。</p>
           </section>
           <section>
-            <h2>LP・サービスページ改善相談</h2>
-            <p>ファーストビュー、料金表示、FAQ、実績、問い合わせボタンなどを確認し、訪問者が迷いやすい場所を見つけます。全面リニューアルではなく、今日直せる順番に分けて提案します。</p>
+            <h2>相談導線・実装支援メニュー設計</h2>
+            <p>ファーストビュー、料金表示、FAQ、実績、問い合わせボタン、相談フォームを確認し、訪問者が迷いやすい場所を見つけます。相談後に何を実装できるかまで整理し、今日直せる順番に分けて提案します。</p>
+          </section>
+          <section>
+            <h2>Codexを使った実装支援</h2>
+            <p>記事更新、LP修正、問い合わせフォーム改善、SNS下書き生成、チェックリスト化など、AIとCodexを使って実際に手を動かす支援です。最初は小さく試し、効果が見えた作業から継続化します。</p>
           </section>
         </div>
         <h2>相談前に用意すると進みやすいもの</h2>
-        <p>現在のサイトURL、困っていること、増やしたい問い合わせの種類、参考にしているページ、過去のお客様からよく聞かれる質問があると、具体的な改善案にしやすくなります。</p>
+        <p>現在のサイトURL、困っていること、AI化したい作業、増やしたい問い合わせの種類、参考にしているページ、過去のお客様からよく聞かれる質問、希望する予算感があると、具体的な改善案にしやすくなります。</p>
         <h2>相談フォーム</h2>
         <p>以下の項目を分かる範囲で入力すると、メールアプリが開きます。内容を確認して送信してください。</p>
         <form class="consultation-form" action="mailto:${escapeHtml(site.contactEmail)}?subject=AI%20Biz%20Note%20%E7%9B%B8%E8%AB%87%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0" method="POST" enctype="text/plain">
@@ -405,10 +409,11 @@ function renderConsultation(site) {
             相談したい内容
             <select name="consultation_topic" required>
               <option value="">選択してください</option>
-              <option value="AI活用の実装相談">AI活用の実装相談</option>
-              <option value="記事テーマと集客導線">記事テーマと集客導線</option>
-              <option value="LP・サービスページ改善">LP・サービスページ改善</option>
-              <option value="問い合わせ導線の整理">問い合わせ導線の整理</option>
+              <option value="AI導入・業務自動化相談">AI導入・業務自動化相談</option>
+              <option value="ニュース記事・SNS運用の仕組み化">ニュース記事・SNS運用の仕組み化</option>
+              <option value="相談導線・実装支援メニュー設計">相談導線・実装支援メニュー設計</option>
+              <option value="LP・問い合わせフォーム改善">LP・問い合わせフォーム改善</option>
+              <option value="Codexを使った実装支援">Codexを使った実装支援</option>
               <option value="その他">その他</option>
             </select>
           </label>
@@ -422,6 +427,7 @@ function renderConsultation(site) {
             困っていること・必要事項
             <textarea name="message" rows="8" required placeholder="例:
 ・今の課題
+・AI化したい作業
 ・増やしたい問い合わせ
 ・見てほしいページ
 ・希望する改善内容
