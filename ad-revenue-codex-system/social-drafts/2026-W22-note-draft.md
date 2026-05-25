@@ -4,7 +4,31 @@ AI Biz Note collects practical articles about AI, search, ads, SNS, automation, 
 
 This weekly note draft summarizes five articles and links readers back to the main site and consultation menu.
 
-## 1. Googleビジネスプロフィールの投稿ネタを毎週作る考え方
+## 1. 小さな事業がメルマガやLINE配信をAIで続けるための文章設計
+
+メルマガやLINE配信を無理なく続けるため、AIでネタ出し、下書き、改善を行う実務手順を紹介します。
+
+First point to check: 配信は売り込みだけにしない
+
+Article: https://aibiz-note.jp/posts/email-newsletter-ai-small-business.html
+
+## 2. AdSenseとアフィリエイトを同じブログで使うときの収益導線設計
+
+広告収益ブログでAdSenseとアフィリエイトを併用するとき、読者体験を壊さず収益導線を作る考え方を整理します。
+
+First point to check: 広告と紹介は役割が違う
+
+Article: https://aibiz-note.jp/posts/adsense-affiliate-balance.html
+
+## 3. LPに信頼感を出すために入れるべき実績・事例・保証の見せ方
+
+問い合わせ前の不安を減らすため、LPに掲載する信頼材料の選び方と配置を具体的に解説します。
+
+First point to check: 信頼材料は早めに見せる
+
+Article: https://aibiz-note.jp/posts/lp-trust-elements.html
+
+## 4. Googleビジネスプロフィールの投稿ネタを毎週作る考え方
 
 地域店舗がGoogleビジネスプロフィールの投稿を止めずに続けるため、投稿ネタの分類と作成手順をまとめます。
 
@@ -12,37 +36,13 @@ First point to check: 投稿は検索前の安心材料になる
 
 Article: https://aibiz-note.jp/posts/google-business-profile-post-ideas.html
 
-## 2. 打ち合わせメモをAIで議事録と次の作業に変える実務フロー
+## 5. 打ち合わせメモをAIで議事録と次の作業に変える実務フロー
 
 打ち合わせ後にメモが散らかったままになる状態を防ぐため、AIで議事録、要点、次の作業へ整理する流れを解説します。
 
 First point to check: メモはきれいに書くより材料を残す
 
 Article: https://aibiz-note.jp/posts/meeting-notes-ai-workflow.html
-
-## 3. AIで問い合わせ対応を整えるための返信テンプレート設計入門
-
-小さな事業で問い合わせ対応をAIに手伝わせる前に、返信品質を安定させるテンプレートと確認ルールを整える方法をまとめます。
-
-First point to check: 最初に決めるのは返信の型
-
-Article: https://aibiz-note.jp/posts/ai-first-customer-support-template.html
-
-## 4. 地域ビジネスが検索で見つかるための記事テーマの作り方
-
-美容室、整体、飲食店、教室など地域ビジネス向けに、検索から見つけてもらう記事テーマの考え方を整理します。
-
-First point to check: 地域名と悩みを組み合わせる
-
-Article: https://aibiz-note.jp/posts/local-seo-content-plan.html
-
-## 5. LPのファーストビューで離脱を減らすための確認ポイント
-
-ランディングページを開いた直後に伝えるべき情報を整理し、問い合わせや予約につながりやすくする見直しポイントを紹介します。
-
-First point to check: 誰向けのページか一瞬で伝える
-
-Article: https://aibiz-note.jp/posts/lp-first-view-checkpoints.html
 
 ## Consultation
 
