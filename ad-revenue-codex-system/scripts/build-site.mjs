@@ -6,7 +6,7 @@ const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const dataPath = path.join(rootDir, "content", "articles.json");
 const publicDir = path.join(rootDir, "public");
 const postsDir = path.join(publicDir, "posts");
-const assetVersion = "20260523-consultation";
+const assetVersion = "20260526-revenue-menu";
 
 function escapeHtml(value) {
   return String(value)
@@ -384,6 +384,21 @@ function renderConsultation(site) {
             <p>記事更新、LP修正、問い合わせフォーム改善、SNS下書き生成、チェックリスト化など、AIとCodexを使って実際に手を動かす支援です。最初は小さく試し、効果が見えた作業から継続化します。</p>
           </section>
         </div>
+        <h2>相談・実装支援の目安</h2>
+        <div class="service-list">
+          <section>
+            <h2>初回整理相談</h2>
+            <p>現状のサイト、記事、SNS、問い合わせ導線、AI化したい作業を確認し、優先順位を整理します。目安は30分から60分の相談です。まず何から直すべきかを決めたい場合に向いています。</p>
+          </section>
+          <section>
+            <h2>小規模実装支援</h2>
+            <p>相談後に、記事構成、LP文言、問い合わせフォーム、X投稿案、note導線、AIプロンプト、チェックリストなどを一部実装します。目安は5万円から10万円程度の小さな改善単位です。</p>
+          </section>
+          <section>
+            <h2>運用仕組み化支援</h2>
+            <p>ニュース調査、記事作成、SNS下書き、相談導線、週次レポートを継続的に回す仕組みを作ります。目安は10万円から30万円程度で、月100万円を狙うための高単価支援候補です。</p>
+          </section>
+        </div>
         <h2>相談前に用意すると進みやすいもの</h2>
         <p>現在のサイトURL、困っていること、AI化したい作業、増やしたい問い合わせの種類、参考にしているページ、過去のお客様からよく聞かれる質問、希望する予算感があると、具体的な改善案にしやすくなります。</p>
         <h2>相談フォーム</h2>
@@ -436,7 +451,7 @@ function renderConsultation(site) {
 
           <label>
             希望する進め方・予算感
-            <input type="text" name="budget_timing" placeholder="例: まずは相談のみ、今月中に改善したい、など">
+            <input type="text" name="budget_timing" placeholder="例: まずは相談のみ、5万円以内で小さく試したい、10万円以上で仕組み化したい、など">
           </label>
 
           <button class="button dark" type="submit">メールアプリで送信する</button>
