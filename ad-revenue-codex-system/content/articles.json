@@ -24,6 +24,50 @@
   ],
   "articles": [
     {
+      "slug": "ai-search-ads-seo-foundation-2026",
+      "title": "AI検索と広告の変化でサイト運営者が見直すべきSEOの基本",
+      "category": "検索・広告・SNS",
+      "description": "Google検索のAI機能とAI時代の広告変化を踏まえ、AdSense審査中のサイト運営者が何を直すべきかを整理します。",
+      "targetKeyword": "AI検索 SEO 広告 2026",
+      "readingMinutes": 8,
+      "publishedAt": "2026-05-29T09:00:00+09:00",
+      "updatedAt": "2026-05-29T09:00:00+09:00",
+      "sections": [
+        {
+          "heading": "確認済み情報",
+          "body": "Google検索セントラルは、AIによる概要やAIモードなどのAI機能でも、SEOの基本的なベストプラクティスは引き続き有効だと説明しています。AI機能に表示されるための追加要件や特別な最適化は不要で、クロール、内部リンク、ページ体験、テキストで読める重要情報、構造化データと本文の一致などが重要です。参考: https://developers.google.com/search/docs/appearance/ai-features?hl=ja"
+        },
+        {
+          "heading": "広告側でもAI化が進んでいる",
+          "body": "Google Ads & Commerce Blogは2026年5月20日、Geminiを使ったAI時代の検索広告フォーマットを紹介しました。AI Mode内でのConversational Discovery ads、Highlighted Answers、AI-powered Shopping ads、Business Agent for Leadsなど、検索広告は単なるリンク表示から、比較や相談に近い体験へ寄っています。参考: https://blog.google/products/ads-commerce/google-marketing-live-search-ads/"
+        },
+        {
+          "heading": "5月28日の追加材料",
+          "body": "Googleは2026年5月28日のAds Decodedでも、AI Search、測定、クリエイティブをGoogle Marketing Live 2026の主要テーマとして扱っています。広告運用では、AIに任せる部分が増えるほど、商品情報、計測、ランディングページの整合性が重要になります。参考: https://blog.google/products/ads-commerce/ads-decoded-finale/"
+        },
+        {
+          "heading": "ニュースの本質",
+          "body": "検索がAI化すると、読者は従来よりも比較や要約を済ませた状態でサイトに来る可能性があります。だからこそ、記事側は一般論を並べるだけでは弱くなります。自分の事業、読者の状況、確認手順、失敗例、判断基準まで書いて、AIにも人にも引用しやすい具体性を持たせる必要があります。"
+        },
+        {
+          "heading": "AdSense審査中に避けたいこと",
+          "body": "AdSense審査中は、AI検索対策や広告収益化を強く煽るより、読者が安全に判断できる情報を増やす方が向いています。たとえば、必ず収益が上がる、AI検索で必ず表示される、といった表現は避けます。代わりに、確認できる公式情報、実務での見直し手順、公開前チェックを分けて書きます。"
+        },
+        {
+          "heading": "小さなサイトが今日直す場所",
+          "body": "まず、トップページ、主要記事、相談ページの三つを見直します。トップページには何のサイトかを明確に書き、主要記事には確認手順やチェックリストを入れ、相談ページには何を相談できるのかを具体的に書きます。AI検索時代でも、内部リンクで重要ページに到達しやすいこと、本文がテキストとして読めること、スマホで読みやすいことは基本です。"
+        },
+        {
+          "heading": "相談メニューへのつなげ方",
+          "body": "このテーマは、Web集客相談やAI活用相談に自然につながります。相談メニューでは、AI検索対策という広い言葉より、主要ページ診断、記事の独自性チェック、Search Console確認、問い合わせ導線の見直し、といった具体的な作業に分けると伝わりやすくなります。"
+        },
+        {
+          "heading": "今日やること",
+          "body": "AI検索やAI広告の変化に合わせる第一歩は、特別なファイルを作ることではなく、既存ページの中身を確認することです。読者が何を判断できるか、問い合わせ前の不安が減るか、公式情報と自分の見解が分かれているかを見ます。AI Biz Noteでは、この確認を記事改善、相談メニュー、note商品に展開できます。"
+        }
+      ]
+    },
+    {
       "slug": "self-running-ai-agents-security-2026",
       "title": "自律AIエージェント導入で最初に決めるべきセキュリティルール",
       "category": "AIニュース",
