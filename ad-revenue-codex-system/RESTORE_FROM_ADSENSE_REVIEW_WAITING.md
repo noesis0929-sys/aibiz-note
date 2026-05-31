@@ -1,4 +1,4 @@
-# AdSense審査待ちからの復旧メモ
+# AdSense否認後の改善・再申請準備メモ
 
 このチャットで再開する対象プロジェクトは、AI Biz Noteです。
 
@@ -13,7 +13,8 @@
 
 ## 現在の復旧状態
 
-- Cloudflare Pages移行後、AdSense審査待ちの状態から再開。
+- Cloudflare Pages移行後、AdSense審査は否認された。
+- 現在は、否認理由の確認、サイト改善、再申請準備の段階。
 - AdSenseクライアントID: `ca-pub-2367995267394493`
 - Publisher ID: `pub-2367995267394493`
 - `ads.txt` は生成済み。
@@ -43,8 +44,11 @@ google.com, pub-2367995267394493, DIRECT, f08c47fec0942fa0
    - `https://aibiz-note.jp/sitemap.xml`
    - `https://aibiz-note.jp/consultation.html`
 4. Google Search Consoleで `sitemap.xml` を送信する。
-5. AdSense審査が通ったら、正式な広告ユニットIDで広告配置を少なめに開始する。
+5. AdSense管理画面または通知メールで具体的な否認理由を確認する。
+6. 理由に対応する改善を行い、改善内容を記録する。
+7. 改善後にAdSenseの再審査を依頼する。
+8. 承認後、正式な広告ユニットIDで広告配置を少なめに開始する。
 
 ## 再開キーワード
 
-「AI Biz Noteの続き。RESTORE_FROM_ADSENSE_REVIEW_WAITING.mdを見て、AdSense審査待ちから再開」
+「AI Biz Noteの続き。RESTORE_FROM_ADSENSE_REVIEW_WAITING.mdを見て、AdSense否認後の改善から再開」
