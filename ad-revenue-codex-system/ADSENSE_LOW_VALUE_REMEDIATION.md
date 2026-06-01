@@ -51,6 +51,15 @@ Google公式ヘルプでは、AdSense向けサイトに、訪問者に関連す�
 5. 1週間程度、公開状態とインデックス状況を確認する。
 6. 改善内容を整理してからAdSenseへ再審査を依頼する。
 
+## 改善進捗
+
+### 2026-06-01
+
+- `fujitsu-self-evolving-multi-ai-agents-2026` を改善。
+- 富士通公式発表の具体例、平均28ポイントの精度向上、設計仕様書検索への適用を追加。
+- 小規模チーム向けの週次改善4ステップと記録テンプレートを追加。
+- 次回の改善対象: `self-running-ai-agents-security-2026`
+
 ## 参照したGoogle公式情報
 
 - https://support.google.com/adsense/answer/7299563/make-sure-that-your-site-s-pages-are-ready-for-adsense
