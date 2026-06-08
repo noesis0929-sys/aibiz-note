@@ -60,6 +60,14 @@ Google公式ヘルプでは、AdSense向けサイトに、訪問者に関連す�
 - 小規模チーム向けの週次改善4ステップと記録テンプレートを追加。
 - 次回の改善対象: `self-running-ai-agents-security-2026`
 
+### 2026-06-08
+
+- 停止していた2026-06-02から2026-06-08までの品質改善をまとめて実行。
+- 公開7記事すべてに、公式情報、具体例、手順、確認表、運営ルールのいずれかを追加。
+- 公開7記事の完全一致段落は0件。
+- 公開HTMLリンク切れは0件。
+- 再申請前チェックを実施したが、GitHub / Cloudflare Pagesへ未反映のため再申請は保留。
+
 ## 参照したGoogle公式情報
 
 - https://support.google.com/adsense/answer/7299563/make-sure-that-your-site-s-pages-are-ready-for-adsense
