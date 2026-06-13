@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -535,9 +535,15 @@ function renderAdsTxt(site) {
 
 const data = JSON.parse(await readFile(dataPath, "utf8"));
 const siteUrl = normalizeSiteUrl(data.site.siteUrl);
+const articleSlugs = new Set(data.articles.map((article) => article.slug));
 
 await mkdir(publicDir, { recursive: true });
 await mkdir(postsDir, { recursive: true });
+for (const fileName of await readdir(postsDir)) {
+  if (fileName.endsWith(".html") && !articleSlugs.has(fileName.replace(/\.html$/, ""))) {
+    await unlink(path.join(postsDir, fileName));
+  }
+}
 await writeFile(path.join(publicDir, "index.html"), renderHome(data), "utf8");
 await writeFile(path.join(publicDir, "about.html"), renderAbout(data.site), "utf8");
 await writeFile(path.join(publicDir, "consultation.html"), renderConsultation(data.site), "utf8");
